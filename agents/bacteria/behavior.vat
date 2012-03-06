@@ -1,0 +1,336 @@
+<?xml version="1.0"?>
+<behavior comments="I am user controlled">
+  <method disclosed="true">
+    <while-running/>
+    <rule>
+      <if>
+        <percent-chance expression="4"/>
+        <once-every seconds="5"/>
+      </if>
+      <then>
+        <message selector="Reproduce">
+          <direction/>
+        </message>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <test expression1="Hunger" operator="&lt;=" expression2="0"/>
+        <see shape="BACTERIA Bacteria">
+          <direction/>
+        </see>
+      </if>
+      <then>
+        <erase>
+          <direction/>
+        </erase>
+        <set attribute="@SICK" value="@Sick - 1"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <test expression1="Hunger" operator="&lt;=" expression2="0"/>
+        <see shape="SUPER_MUTANT Bacteria">
+          <direction/>
+        </see>
+      </if>
+      <then>
+        <erase>
+          <direction/>
+        </erase>
+        <set attribute="@SICK" value="@Sick - 1"/>
+        <set attribute="@EPIDEMIC" value="@Epidemic"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see shape="BACFOOD Bacfood">
+          <direction dcol="1"/>
+        </see>
+        <test expression1="Hunger" operator="&lt;=" expression2="5"/>
+        <test expression1="Is_Eating" expression2="0"/>
+      </if>
+      <then>
+        <message selector="Set_Being_Eaten">
+          <direction dcol="1"/>
+        </message>
+        <set attribute="EAT_TIMER" value="0.1"/>
+        <set attribute="IS_EATING" value="1"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see shape="BACFOOD Bacfood">
+          <direction dcol="-1"/>
+        </see>
+        <test expression1="Hunger" operator="&lt;=" expression2="5"/>
+        <test expression1="Is_Eating" expression2="0"/>
+      </if>
+      <then>
+        <message selector="Set_Being_Eaten">
+          <direction dcol="-1"/>
+        </message>
+        <set attribute="EAT_TIMER" value="0.1"/>
+        <set attribute="IS_EATING" value="1"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see shape="BACFOOD Bacfood">
+          <direction drow="-1"/>
+        </see>
+        <test expression1="Hunger" operator="&lt;=" expression2="5"/>
+        <test expression1="Is_Eating" expression2="0"/>
+      </if>
+      <then>
+        <message selector="Set_Being_Eaten">
+          <direction drow="-1"/>
+        </message>
+        <set attribute="EAT_TIMER" value="0.1"/>
+        <set attribute="IS_EATING" value="1"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see shape="BACFOOD Bacfood">
+          <direction drow="1"/>
+        </see>
+        <test expression1="Hunger" operator="&lt;=" expression2="5"/>
+        <test expression1="Is_Eating" expression2="0"/>
+      </if>
+      <then>
+        <message selector="Set_Being_Eaten">
+          <direction drow="1"/>
+        </message>
+        <set attribute="EAT_TIMER" value="0.1"/>
+        <set attribute="IS_EATING" value="1"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <test expression1="Eat_Timer" operator="&lt;=" expression2="2"/>
+        <test expression1="Eat_Timer" operator="&gt;" expression2="0"/>
+        <once-every seconds="0.1"/>
+      </if>
+      <then>
+        <set attribute="EAT_TIMER" value="Eat_Timer+0.1"/>
+        <set attribute="IS_EATING" value="1"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <test expression1="Is_Eating" expression2="1"/>
+        <test expression1="Eat_Timer" operator="&gt;=" expression2="2"/>
+        <see shape="BEING_EATEN Bacfood">
+          <direction dcol="1"/>
+        </see>
+      </if>
+      <then>
+        <message selector="Set_Done_Being_Eaten">
+          <direction dcol="1"/>
+        </message>
+        <set attribute="IS_EATING" value="0"/>
+        <set attribute="HUNGER" value="Hunger+8"/>
+        <set attribute="EAT_TIMER" value="0"/>
+        <move-random distance="2"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <test expression1="Is_Eating" expression2="1"/>
+        <test expression1="Eat_Timer" operator="&gt;=" expression2="2"/>
+        <see shape="BEING_EATEN Bacfood">
+          <direction dcol="-1"/>
+        </see>
+      </if>
+      <then>
+        <message selector="Set_Done_Being_Eaten">
+          <direction dcol="-1"/>
+        </message>
+        <set attribute="IS_EATING" value="0"/>
+        <set attribute="HUNGER" value="Hunger+10"/>
+        <set attribute="EAT_TIMER" value="0"/>
+        <move-random distance="2"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <test expression1="Is_Eating" expression2="1"/>
+        <test expression1="Eat_Timer" operator="&gt;=" expression2="2"/>
+        <see shape="BEING_EATEN Bacfood">
+          <direction drow="-1"/>
+        </see>
+      </if>
+      <then>
+        <message selector="Set_Done_Being_Eaten">
+          <direction drow="-1"/>
+        </message>
+        <set attribute="IS_EATING" value="0"/>
+        <set attribute="HUNGER" value="Hunger+10"/>
+        <set attribute="EAT_TIMER" value="0"/>
+        <move-random distance="2"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <test expression1="Is_Eating" expression2="1"/>
+        <test expression1="Eat_Timer" operator="&gt;=" expression2="2"/>
+        <see shape="BEING_EATEN Bacfood">
+          <direction drow="1"/>
+        </see>
+      </if>
+      <then>
+        <message selector="Set_Done_Being_Eaten">
+          <direction drow="1"/>
+        </message>
+        <set attribute="IS_EATING" value="0"/>
+        <set attribute="HUNGER" value="Hunger+10"/>
+        <set attribute="EAT_TIMER" value="0"/>
+        <move-random distance="2"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <test expression1="Is_Eating" operator="!=" expression2="1"/>
+        <once-every seconds="0.3"/>
+      </if>
+      <then>
+        <set attribute="HUNGER" value="Hunger-1"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <test expression1="Is_Eating" operator="!=" expression2="1"/>
+        <test expression1="Hunger" operator="&gt;" expression2="5"/>
+      </if>
+      <then>
+        <move-random distance="2"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <test expression1="d[left]" operator="&gt;=" expression2="d[right]"/>
+        <test expression1="d[left]" operator="&gt;=" expression2="d[up]"/>
+        <test expression1="d[left]" operator="&gt;=" expression2="d[down]"/>
+        <test expression1="Is_Eating" operator="!=" expression2="1"/>
+      </if>
+      <then>
+        <move>
+          <direction dcol="-1"/>
+        </move>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <test expression1="Is_Eating" operator="!=" expression2="1"/>
+        <test expression1="d[right]" operator="&gt;=" expression2="d[left]"/>
+        <test expression1="d[right]" operator="&gt;=" expression2="d[up]"/>
+        <test expression1="d[right]" operator="&gt;=" expression2="d[down]"/>
+      </if>
+      <then>
+        <move>
+          <direction dcol="1"/>
+        </move>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <test expression1="Is_Eating" operator="!=" expression2="1"/>
+        <test expression1="d[up]" operator="&gt;=" expression2="d[right]"/>
+        <test expression1="d[up]" operator="&gt;=" expression2="d[right]"/>
+        <test expression1="d[up]" operator="&gt;=" expression2="d[down]"/>
+      </if>
+      <then>
+        <move>
+          <direction drow="1"/>
+        </move>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <test expression1="Is_Eating" operator="!=" expression2="1"/>
+        <test expression1="d[down]" operator="&gt;=" expression2="d[right]"/>
+        <test expression1="d[down]" operator="&gt;=" expression2="d[up]"/>
+        <test expression1="d[down]" operator="&gt;=" expression2="d[left]"/>
+      </if>
+      <then>
+        <move>
+          <direction drow="-1"/>
+        </move>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <test expression1="Is_Eating" expression2="1"/>
+        <see-a negated="true" class-name="BACFOOD">
+          <direction dcol="-1"/>
+        </see-a>
+        <see-a negated="true" class-name="BACFOOD">
+          <direction drow="1"/>
+        </see-a>
+        <see-a negated="true" class-name="BACFOOD">
+          <direction dcol="1"/>
+        </see-a>
+        <see-a negated="true" class-name="BACFOOD">
+          <direction drow="-1"/>
+        </see-a>
+      </if>
+      <then>
+        <set attribute="HUNGER" value="Hunger-1"/>
+      </then>
+    </rule>
+  </method>
+  <method disclosed="true">
+    <when-creating-new-agent/>
+    <rule>
+      <if/>
+      <then>
+        <set attribute="HUNGER" value="10"/>
+        <set attribute="@SICK" value="@Sick + 1"/>
+      </then>
+    </rule>
+  </method>
+  <method disclosed="true">
+    <on selector="Reproduce"/>
+    <rule>
+      <if>
+        <percent-chance expression="1"/>
+        <see shape="BACTERIA Bacteria">
+          <direction/>
+        </see>
+      </if>
+      <then>
+        <new shape="SUPER_MUTANT Bacteria">
+          <direction dcol="1"/>
+        </new>
+        <set attribute="@EPIDEMIC" value="Epidemic + 1"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see shape="BACTERIA Bacteria">
+          <direction/>
+        </see>
+      </if>
+      <then>
+        <new shape="BACTERIA Bacteria">
+          <direction dcol="1"/>
+        </new>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see shape="SUPER_MUTANT Bacteria">
+          <direction/>
+        </see>
+      </if>
+      <then>
+        <new shape="SUPER_MUTANT Bacteria">
+          <direction dcol="1"/>
+        </new>
+        <set attribute="@SICK" value="@Sick + 1"/>
+        <set attribute="@EPIDEMIC" value="@Epidemic + 1"/>
+      </then>
+    </rule>
+  </method>
+</behavior>

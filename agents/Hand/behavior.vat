@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<behavior comments="I am user controlled">
+  <method disclosed="true">
+    <while-running/>
+    <rule>
+      <if>
+        <test expression1="@Sick" operator="&gt;" expression2="80"/>
+        <test expression1="@Getting_Sick" operator="!=" expression2="1"/>
+      </if>
+      <then>
+        <stop-simulation/>
+        <show-message text="You are starting to get sick!" subtext="The spaceship is ready to go"/>
+        <run-simulation/>
+        <set attribute="@GETTING_SICK" value="1"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <test expression1="@Epidemic" operator="&gt;=" expression2="120"/>
+      </if>
+      <then>
+        <stop-simulation/>
+        <show-message text="You Started an Epidemic. You&#39;ve killed EVERYONE. Don&#39;t use so much soap next time!" subtext="The spaceship is ready to go"/>
+        <run-simulation/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <test expression1="@Sick" operator="&gt;" expression2="150"/>
+      </if>
+      <then>
+        <stop-simulation/>
+        <show-message text="You Died!" subtext="The spaceship is ready to go"/>
+        <reload-world/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <key label="S"/>
+        <percent-chance expression="10"/>
+      </if>
+      <then>
+        <new shape="UNTITLED Soap">
+          <direction/>
+        </new>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <key label="F"/>
+        <percent-chance expression="0.1"/>
+      </if>
+      <then>
+        <new shape="BACFOOD Bacfood">
+          <direction/>
+        </new>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <key label="M"/>
+        <percent-chance expression="0.3"/>
+      </if>
+      <then>
+        <new shape="BACTERIA Bacteria">
+          <direction/>
+        </new>
+      </then>
+    </rule>
+    <rule>
+      <if/>
+      <then>
+        <set attribute="D" value="0.25*(D[left] + D[right] + D[down] + D[up])"/>
+      </then>
+    </rule>
+  </method>
+</behavior>

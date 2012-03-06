@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<behavior comments="I am user controlled">
+  <method disclosed="true">
+    <while-running/>
+    <rule>
+      <if>
+        <test expression1="Soap_Timer" operator="&lt;=" expression2="0"/>
+      </if>
+      <then>
+        <erase>
+          <direction/>
+        </erase>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see shape="BACTERIA Bacteria">
+          <direction dcol="1"/>
+        </see>
+      </if>
+      <then>
+        <erase>
+          <direction dcol="1"/>
+        </erase>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see shape="BACTERIA Bacteria">
+          <direction drow="1"/>
+        </see>
+      </if>
+      <then>
+        <erase>
+          <direction drow="1"/>
+        </erase>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see shape="BACTERIA Bacteria">
+          <direction dcol="-1"/>
+        </see>
+      </if>
+      <then>
+        <erase>
+          <direction dcol="-1"/>
+        </erase>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see shape="BACTERIA Bacteria">
+          <direction drow="-1"/>
+        </see>
+      </if>
+      <then>
+        <erase>
+          <direction drow="-1"/>
+        </erase>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <once-every seconds="0.1"/>
+      </if>
+      <then>
+        <set attribute="SOAP_TIMER" value="Soap_Timer - 0.1"/>
+        <rotate-by droll="15"/>
+      </then>
+    </rule>
+  </method>
+  <method disclosed="true">
+    <when-creating-new-agent/>
+    <rule>
+      <if/>
+      <then>
+        <set attribute="SOAP_TIMER" value="0.7"/>
+      </then>
+    </rule>
+  </method>
+</behavior>

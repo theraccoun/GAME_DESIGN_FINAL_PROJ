@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<behavior comments="I am user controlled">
+  <method disclosed="true">
+    <while-running/>
+    <rule>
+      <if>
+        <key label="D"/>
+        <percent-chance expression="20"/>
+      </if>
+      <then>
+        <erase>
+          <direction/>
+        </erase>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see-a negated="true" class-name="Bacteria">
+          <direction dcol="1"/>
+        </see-a>
+        <see-a negated="true" class-name="Bacteria">
+          <direction dcol="-1"/>
+        </see-a>
+        <see-a negated="true" class-name="Bacteria">
+          <direction drow="1"/>
+        </see-a>
+        <see-a negated="true" class-name="Bacteria">
+          <direction drow="-1"/>
+        </see-a>
+      </if>
+      <then>
+        <change shape="BACFOOD Bacfood">
+          <direction/>
+        </change>
+        <set attribute="D" value="10"/>
+      </then>
+    </rule>
+    <rule>
+      <if/>
+      <then>
+        <set attribute="D" value="10"/>
+      </then>
+    </rule>
+  </method>
+  <method>
+    <when-creating-new-agent/>
+    <rule>
+      <if/>
+      <then>
+        <set attribute="IS_FEEDING" value="0"/>
+        <set attribute="D" value="10"/>
+      </then>
+    </rule>
+  </method>
+  <method>
+    <on selector="Return_If_Eating"/>
+    <rule>
+      <if>
+        <test expression1="Is_Being_Eaten" expression2="1"/>
+      </if>
+      <then/>
+    </rule>
+  </method>
+  <method disclosed="true">
+    <on selector="Set_Done_Being_Eaten"/>
+    <rule>
+      <if/>
+      <then>
+        <set attribute="IS_BEING_EATEN" value="0"/>
+        <change shape="BACFOOD Bacfood">
+          <direction/>
+        </change>
+      </then>
+    </rule>
+  </method>
+  <method disclosed="true">
+    <on selector="Set_Being_Eaten"/>
+    <rule>
+      <if/>
+      <then>
+        <change shape="BEING_EATEN Bacfood">
+          <direction/>
+        </change>
+        <set attribute="IS_BEING_EATEN" value="1"/>
+      </then>
+    </rule>
+  </method>
+</behavior>
