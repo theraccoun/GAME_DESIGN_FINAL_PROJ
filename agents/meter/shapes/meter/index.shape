@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<shape-manager name="METER" relative-texture-path="Fun">
+  <tile texture="Fruit Jelly.jpg"/>
+</shape-manager>

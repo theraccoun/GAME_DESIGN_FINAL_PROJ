@@ -1,0 +1,717 @@
+<?xml version="1.0"?>
+<world width="1674" height="462">
+  <light-source x="5.0" y="12.0" z="7.0" name="glare">
+    <ambient red="0.0" green="0.0" blue="0.0"/>
+    <diffuse red="1.0" green="1.0" blue="1.0"/>
+    <specular red="1.5" green="1.5" blue="1.5"/>
+  </light-source>
+  <background-color red="0.0" green="0.0" blue="0.0"/>
+  <camera eye-x="23.50000023841858" eye-y="19.720000684261322" eye-z="38.20000034198165" center-x="23.50000023841858" center-y="19.720000684261322" center-z="0.0" up-x="0.0" up-y="1.0" up-z="0.0" fovy="60.0" aspect="3.6233766078948975" near="0.005" far="2000.0" azimuth="0.0" zenith="0.0"/>
+  <agent-matrix name="AGENT-MATRIX11508" rows="40" columns="40" layers="1" texture="handNew.jpg">
+    <scoreboard_agent shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent col="1" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <health_agent col="1" shape-name="HEALTH" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent col="2" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <health_agent col="2" shape-name="HEALTH" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent col="3" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent col="4" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent col="5" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <funmeter_agent col="5" shape-name="FUNMETER" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent col="6" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <funmeter_agent col="6" shape-name="FUNMETER" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent col="7" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent col="8" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent col="17" shape-name="UNTITLED" attributes="(D 0.89621085)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent col="18" shape-name="UNTITLED" attributes="(D 1.251063)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent col="19" shape-name="UNTITLED" attributes="(D 1.3714705)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent col="20" shape-name="UNTITLED" attributes="(D 1.4388313)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent col="21" shape-name="UNTITLED" attributes="(D 1.5346289)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent col="22" shape-name="UNTITLED" attributes="(D 1.7143894)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent col="23" shape-name="UNTITLED" attributes="(D 2.0698354)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent col="24" shape-name="UNTITLED" attributes="(D 2.8433325)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent col="25" shape-name="UNTITLED" attributes="(D 4.756198)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent col="26" shape-name="UNTITLED" attributes="(D 3.6890495)" x-turn="0.5" y-turn="0.5"/>
+    <bacfood_agent col="26" shape-name="BACFOOD" attributes="(IS_BEING_EATEN 0 D 10 IS_FEEDING 0)" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="1" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="1" col="1" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <health_agent row="1" col="1" shape-name="HEALTH" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="1" col="2" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <health_agent row="1" col="2" shape-name="HEALTH" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="1" col="3" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="1" col="4" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="1" col="5" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <funmeter_agent row="1" col="5" shape-name="FUNMETER" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="1" col="6" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <funmeter_agent row="1" col="6" shape-name="FUNMETER" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="1" col="7" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="1" col="8" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="1" col="17" shape-name="UNTITLED" attributes="(D 2.333899)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="1" col="18" shape-name="UNTITLED" attributes="(D 2.7365706)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="1" col="19" shape-name="UNTITLED" attributes="(D 2.7961373)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="1" col="20" shape-name="UNTITLED" attributes="(D 2.8492985)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="1" col="21" shape-name="UNTITLED" attributes="(D 2.9852946)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="1" col="22" shape-name="UNTITLED" attributes="(D 3.2531662)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="1" col="23" shape-name="UNTITLED" attributes="(D 3.7218518)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="1" col="24" shape-name="UNTITLED" attributes="(D 4.547393)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="1" col="25" shape-name="UNTITLED" attributes="(D 6.18146)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="1" col="26" shape-name="UNTITLED" attributes="(D 5.215458)" x-turn="0.5" y-turn="0.5"/>
+    <bacfood_agent row="1" col="26" shape-name="BACFOOD" attributes="(IS_BEING_EATEN 0 D 10 IS_FEEDING 0)" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="2" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="2" col="1" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <health_agent row="2" col="1" shape-name="HEALTH" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="2" col="2" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <health_agent row="2" col="2" shape-name="HEALTH" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="2" col="3" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="2" col="4" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="2" col="5" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <funmeter_agent row="2" col="5" shape-name="FUNMETER" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="2" col="6" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <funmeter_agent row="2" col="6" shape-name="FUNMETER" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="2" col="7" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="2" col="8" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="2" col="16" shape-name="UNTITLED" attributes="(D 2.8250475)" x-turn="0.5" y-turn="0.5"/>
+    <bacfood_agent row="2" col="16" shape-name="BACFOOD" attributes="(IS_BEING_EATEN 0 D 10 IS_FEEDING 0)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="2" col="17" shape-name="UNTITLED" attributes="(D 5.702815)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="2" col="18" shape-name="UNTITLED" attributes="(D 4.565466)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="2" col="19" shape-name="UNTITLED" attributes="(D 4.227838)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="2" col="20" shape-name="UNTITLED" attributes="(D 4.177288)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="2" col="21" shape-name="UNTITLED" attributes="(D 4.3045864)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="2" col="22" shape-name="UNTITLED" attributes="(D 4.591649)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="2" col="23" shape-name="UNTITLED" attributes="(D 5.0170884)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="2" col="24" shape-name="UNTITLED" attributes="(D 5.4429274)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="2" col="25" shape-name="UNTITLED" attributes="(D 5.4223466)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="2" col="26" shape-name="UNTITLED" attributes="(D 4.6804433)" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="3" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="3" col="1" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <health_agent row="3" col="1" shape-name="HEALTH" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="3" col="2" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <health_agent row="3" col="2" shape-name="HEALTH" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="3" col="3" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="3" col="4" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="3" col="5" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <funmeter_agent row="3" col="5" shape-name="FUNMETER" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="3" col="6" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <funmeter_agent row="3" col="6" shape-name="FUNMETER" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="3" col="7" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="3" col="8" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="3" col="16" shape-name="UNTITLED" attributes="(D 5.5975304)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="3" col="17" shape-name="UNTITLED" attributes="(D 5.91212)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="3" col="18" shape-name="UNTITLED" attributes="(D 5.5946417)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="3" col="19" shape-name="UNTITLED" attributes="(D 5.372625)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="3" col="20" shape-name="UNTITLED" attributes="(D 5.3281755)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="3" col="21" shape-name="UNTITLED" attributes="(D 5.4643908)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="3" col="22" shape-name="UNTITLED" attributes="(D 5.7922306)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="3" col="23" shape-name="UNTITLED" attributes="(D 6.312539)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="3" col="24" shape-name="UNTITLED" attributes="(D 6.784957)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="3" col="25" shape-name="UNTITLED" attributes="(D 5.384732)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="3" col="26" shape-name="UNTITLED" attributes="(D 3.2994266)" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="4" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="4" col="1" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <health_agent row="4" col="1" shape-name="HEALTH" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="4" col="2" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <health_agent row="4" col="2" shape-name="HEALTH" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="4" col="3" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="4" col="4" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="4" col="5" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <funmeter_agent row="4" col="5" shape-name="FUNMETER" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="4" col="6" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <funmeter_agent row="4" col="6" shape-name="FUNMETER" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="4" col="7" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="4" col="8" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="4" col="14" shape-name="UNTITLED" attributes="(D 1.7355633)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="4" col="15" shape-name="UNTITLED" attributes="(D 3.5606997)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="4" col="16" shape-name="UNTITLED" attributes="(D 6.4780693)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="4" col="17" shape-name="UNTITLED" attributes="(D 6.754046)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="4" col="18" shape-name="UNTITLED" attributes="(D 6.529069)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="4" col="19" shape-name="UNTITLED" attributes="(D 6.3400702)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="4" col="20" shape-name="UNTITLED" attributes="(D 6.299306)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="4" col="21" shape-name="UNTITLED" attributes="(D 6.43257)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="4" col="22" shape-name="UNTITLED" attributes="(D 6.800622)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="4" col="23" shape-name="UNTITLED" attributes="(D 7.6561327)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="4" col="24" shape-name="UNTITLED" attributes="(D 6.9989643)" x-turn="0.5" y-turn="0.5"/>
+    <bacfood_agent row="4" col="24" shape-name="BACFOOD" attributes="(IS_BEING_EATEN 1 D 10 IS_FEEDING 0)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="4" col="25" shape-name="UNTITLED" attributes="(D 6.0323653)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="4" col="26" shape-name="UNTITLED" attributes="(D 3.132723)" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="5" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="5" col="1" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <health_agent row="5" col="1" shape-name="HEALTH" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="5" col="2" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <health_agent row="5" col="2" shape-name="HEALTH" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="5" col="3" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="5" col="4" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="5" col="5" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <funmeter_agent row="5" col="5" shape-name="FUNMETER" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="5" col="6" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <funmeter_agent row="5" col="6" shape-name="FUNMETER" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="5" col="7" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="5" col="8" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="5" col="14" shape-name="UNTITLED" attributes="(D 3.3815532)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="5" col="15" shape-name="UNTITLED" attributes="(D 6.029248)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="5" col="16" shape-name="UNTITLED" attributes="(D 7.264119)" x-turn="0.5" y-turn="0.5"/>
+    <bacfood_agent row="5" col="16" shape-name="BACFOOD" attributes="(IS_BEING_EATEN 1 D 10 IS_FEEDING 0)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="5" col="17" shape-name="UNTITLED" attributes="(D 8.097258)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="5" col="18" shape-name="UNTITLED" attributes="(D 7.427516)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="5" col="19" shape-name="UNTITLED" attributes="(D 7.160567)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="5" col="20" shape-name="UNTITLED" attributes="(D 7.0967455)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="5" col="21" shape-name="UNTITLED" attributes="(D 7.166609)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="5" col="22" shape-name="UNTITLED" attributes="(D 7.3224897)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="5" col="23" shape-name="UNTITLED" attributes="(D 7.51219)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="5" col="24" shape-name="UNTITLED" attributes="(D 7.5224037)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="5" col="25" shape-name="UNTITLED" attributes="(D 5.6120067)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="5" col="26" shape-name="UNTITLED" attributes="(D 3.19936)" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="6" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="6" col="1" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <health_agent row="6" col="1" shape-name="HEALTH" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="6" col="2" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <health_agent row="6" col="2" shape-name="HEALTH" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="6" col="3" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="6" col="4" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="6" col="5" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <funmeter_agent row="6" col="5" shape-name="FUNMETER" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="6" col="6" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <funmeter_agent row="6" col="6" shape-name="FUNMETER" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="6" col="7" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="6" col="8" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="6" col="13" shape-name="UNTITLED" attributes="(D 2.489553)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="6" col="14" shape-name="UNTITLED" attributes="(D 5.761497)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="6" col="15" shape-name="UNTITLED" attributes="(D 7.1748824)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="6" col="16" shape-name="UNTITLED" attributes="(D 8.4523735)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="6" col="17" shape-name="UNTITLED" attributes="(D 8.208283)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="6" col="18" shape-name="UNTITLED" attributes="(D 7.9238396)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="6" col="19" shape-name="UNTITLED" attributes="(D 7.778678)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="6" col="20" shape-name="UNTITLED" attributes="(D 7.762036)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="6" col="21" shape-name="UNTITLED" attributes="(D 7.8149886)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="6" col="22" shape-name="UNTITLED" attributes="(D 7.811268)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="6" col="23" shape-name="UNTITLED" attributes="(D 7.548715)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="6" col="24" shape-name="UNTITLED" attributes="(D 6.9658294)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="6" col="25" shape-name="UNTITLED" attributes="(D 5.6947937)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="6" col="26" shape-name="UNTITLED" attributes="(D 4.0530076)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="6" col="27" shape-name="UNTITLED" attributes="(D 2.1152482)" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="7" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="7" col="1" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <health_agent row="7" col="1" shape-name="HEALTH" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="7" col="2" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <health_agent row="7" col="2" shape-name="HEALTH" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="7" col="3" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="7" col="4" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="7" col="5" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <funmeter_agent row="7" col="5" shape-name="FUNMETER" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="7" col="6" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <funmeter_agent row="7" col="6" shape-name="FUNMETER" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="7" col="7" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="7" col="8" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="7" col="13" shape-name="UNTITLED" attributes="(D 4.1967683)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="7" col="14" shape-name="UNTITLED" attributes="(D 6.5019093)" x-turn="0.5" y-turn="0.5"/>
+    <bacfood_agent row="7" col="14" shape-name="BACFOOD" attributes="(IS_BEING_EATEN 1 D 10 IS_FEEDING 0)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="7" col="15" shape-name="UNTITLED" attributes="(D 8.4564495)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="7" col="16" shape-name="UNTITLED" attributes="(D 8.426742)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="7" col="17" shape-name="UNTITLED" attributes="(D 8.359664)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="7" col="18" shape-name="UNTITLED" attributes="(D 8.282063)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="7" col="19" shape-name="UNTITLED" attributes="(D 8.268699)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="7" col="20" shape-name="UNTITLED" attributes="(D 8.358178)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="7" col="21" shape-name="UNTITLED" attributes="(D 8.520472)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="7" col="22" shape-name="UNTITLED" attributes="(D 8.559237)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="7" col="23" shape-name="UNTITLED" attributes="(D 7.9063644)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="7" col="24" shape-name="UNTITLED" attributes="(D 7.0987096)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="7" col="25" shape-name="UNTITLED" attributes="(D 6.149181)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="7" col="26" shape-name="UNTITLED" attributes="(D 5.2027802)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="7" col="27" shape-name="UNTITLED" attributes="(D 4.4079847)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="7" col="28" shape-name="UNTITLED" attributes="(D 3.6019962)" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="8" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="8" col="1" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <health_agent row="8" col="1" shape-name="HEALTH" x-turn="0.5" y-turn="0.5"/>
+    <meter_agent row="8" col="1" shape-name="METER" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="8" col="2" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <health_agent row="8" col="2" shape-name="HEALTH" x-turn="0.5" y-turn="0.5"/>
+    <meter_agent row="8" col="2" shape-name="METER" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="8" col="3" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="8" col="4" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="8" col="5" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <funmeter_agent row="8" col="5" shape-name="FUNMETER" x-turn="0.5" y-turn="0.5"/>
+    <meter_agent row="8" col="5" shape-name="METER" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="8" col="6" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <funmeter_agent row="8" col="6" shape-name="FUNMETER" x-turn="0.5" y-turn="0.5"/>
+    <meter_agent row="8" col="6" shape-name="METER" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="8" col="7" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <scoreboard_agent row="8" col="8" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="8" col="13" shape-name="UNTITLED" attributes="(D 4.29752)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="8" col="14" shape-name="UNTITLED" attributes="(D 7.5930767)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="8" col="15" shape-name="UNTITLED" attributes="(D 8.224287)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="8" col="16" shape-name="UNTITLED" attributes="(D 8.439657)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="8" col="17" shape-name="UNTITLED" attributes="(D 8.522335)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="8" col="18" shape-name="UNTITLED" attributes="(D 8.576047)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="8" col="19" shape-name="UNTITLED" attributes="(D 8.657201)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="8" col="20" shape-name="UNTITLED" attributes="(D 8.881508)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="8" col="21" shape-name="UNTITLED" attributes="(D 9.3502865)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="8" col="22" shape-name="UNTITLED" attributes="(D 9.082211)" x-turn="0.5" y-turn="0.5"/>
+    <bacfood_agent row="8" col="22" shape-name="BACFOOD" attributes="(IS_BEING_EATEN 1 D 10 IS_FEEDING 0)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="8" col="23" shape-name="UNTITLED" attributes="(D 8.419321)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="8" col="24" shape-name="UNTITLED" attributes="(D 7.3734627)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="8" col="25" shape-name="UNTITLED" attributes="(D 6.600966)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="8" col="26" shape-name="UNTITLED" attributes="(D 6.201798)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="8" col="27" shape-name="UNTITLED" attributes="(D 6.7130566)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="8" col="28" shape-name="UNTITLED" attributes="(D 4.9687834)" x-turn="0.5" y-turn="0.5"/>
+    <bacfood_agent row="8" col="28" shape-name="BACFOOD" attributes="(IS_BEING_EATEN 1 D 10 IS_FEEDING 0)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="8" col="29" shape-name="UNTITLED" attributes="(D 3.3411036)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="9" col="12" shape-name="UNTITLED" attributes="(D 2.2268472)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="9" col="13" shape-name="UNTITLED" attributes="(D 5.4004283)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="9" col="14" shape-name="UNTITLED" attributes="(D 7.8506284)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="9" col="15" shape-name="UNTITLED" attributes="(D 8.409008)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="9" col="16" shape-name="UNTITLED" attributes="(D 8.585765)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="9" col="17" shape-name="UNTITLED" attributes="(D 8.715469)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="9" col="18" shape-name="UNTITLED" attributes="(D 8.843056)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="9" col="19" shape-name="UNTITLED" attributes="(D 8.904701)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="9" col="20" shape-name="UNTITLED" attributes="(D 9.160812)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="9" col="21" shape-name="UNTITLED" attributes="(D 9.35173)" x-turn="0.5" y-turn="0.5"/>
+    <bacfood_agent row="9" col="21" shape-name="BACFOOD" attributes="(IS_BEING_EATEN 1 D 10 IS_FEEDING 0)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="9" col="22" shape-name="UNTITLED" attributes="(D 9.2512865)" x-turn="0.5" y-turn="0.5"/>
+    <bacfood_agent row="9" col="22" shape-name="BACFOOD" attributes="(IS_BEING_EATEN 1 D 10 IS_FEEDING 0)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="9" col="23" shape-name="UNTITLED" attributes="(D 8.398594)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="9" col="24" shape-name="UNTITLED" attributes="(D 7.3753805)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="9" col="25" shape-name="UNTITLED" attributes="(D 6.6817155)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="9" col="26" shape-name="UNTITLED" attributes="(D 6.2920837)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="9" col="27" shape-name="UNTITLED" attributes="(D 6.242443)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="9" col="28" shape-name="UNTITLED" attributes="(D 6.219489)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="9" col="29" shape-name="UNTITLED" attributes="(D 3.3646333)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="10" col="12" shape-name="UNTITLED" attributes="(D 3.5070486)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="10" col="13" shape-name="UNTITLED" attributes="(D 7.226847)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="10" col="14" shape-name="UNTITLED" attributes="(D 8.304851)" x-turn="0.5" y-turn="0.5"/>
+    <bacfood_agent row="10" col="14" shape-name="BACFOOD" attributes="(IS_BEING_EATEN 0 D 10 IS_FEEDING 0)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="10" col="15" shape-name="UNTITLED" attributes="(D 8.975891)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="10" col="16" shape-name="UNTITLED" attributes="(D 8.780856)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="10" col="17" shape-name="UNTITLED" attributes="(D 8.911329)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="10" col="18" shape-name="UNTITLED" attributes="(D 9.177731)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="10" col="19" shape-name="UNTITLED" attributes="(D 8.957737)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="10" col="20" shape-name="UNTITLED" attributes="(D 8.859152)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="10" col="21" shape-name="UNTITLED" attributes="(D 8.89764)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="10" col="22" shape-name="UNTITLED" attributes="(D 8.606552)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="10" col="23" shape-name="UNTITLED" attributes="(D 7.8024235)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="10" col="24" shape-name="UNTITLED" attributes="(D 7.050846)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="10" col="25" shape-name="UNTITLED" attributes="(D 6.4584317)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="10" col="26" shape-name="UNTITLED" attributes="(D 6.0453134)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="10" col="27" shape-name="UNTITLED" attributes="(D 5.7475023)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="10" col="28" shape-name="UNTITLED" attributes="(D 5.27251)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="10" col="29" shape-name="UNTITLED" attributes="(D 3.8979406)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="10" col="30" shape-name="UNTITLED" attributes="(D 2.0340228)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="11" col="12" shape-name="UNTITLED" attributes="(D 4.5745006)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="11" col="13" shape-name="UNTITLED" attributes="(D 7.0817366)" x-turn="0.5" y-turn="0.5"/>
+    <bacfood_agent row="11" col="13" shape-name="BACFOOD" attributes="(IS_BEING_EATEN 0 D 10 IS_FEEDING 0)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="11" col="14" shape-name="UNTITLED" attributes="(D 9.16695)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="11" col="15" shape-name="UNTITLED" attributes="(D 8.7137)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="11" col="16" shape-name="UNTITLED" attributes="(D 8.651454)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="11" col="17" shape-name="UNTITLED" attributes="(D 8.971262)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="11" col="18" shape-name="UNTITLED" attributes="(D 8.8956)" x-turn="0.5" y-turn="0.5"/>
+    <bacfood_agent row="11" col="18" shape-name="BACFOOD" attributes="(IS_BEING_EATEN 1 D 10 IS_FEEDING 0)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="11" col="19" shape-name="UNTITLED" attributes="(D 8.891579)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="11" col="20" shape-name="UNTITLED" attributes="(D 8.423785)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="11" col="21" shape-name="UNTITLED" attributes="(D 8.12659)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="11" col="22" shape-name="UNTITLED" attributes="(D 7.7302055)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="11" col="23" shape-name="UNTITLED" attributes="(D 7.155059)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="11" col="24" shape-name="UNTITLED" attributes="(D 6.567151)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="11" col="25" shape-name="UNTITLED" attributes="(D 6.061126)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="11" col="26" shape-name="UNTITLED" attributes="(D 5.683235)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="11" col="27" shape-name="UNTITLED" attributes="(D 5.4309464)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="11" col="28" shape-name="UNTITLED" attributes="(D 5.2264624)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="11" col="29" shape-name="UNTITLED" attributes="(D 4.921301)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="11" col="30" shape-name="UNTITLED" attributes="(D 4.23871)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="12" col="11" shape-name="UNTITLED" attributes="(D 1.9410357)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="12" col="12" shape-name="UNTITLED" attributes="(D 4.791226)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="12" col="13" shape-name="UNTITLED" attributes="(D 7.359027)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="12" col="14" shape-name="UNTITLED" attributes="(D 7.9555264)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="12" col="15" shape-name="UNTITLED" attributes="(D 8.060912)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="12" col="16" shape-name="UNTITLED" attributes="(D 8.143276)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="12" col="17" shape-name="UNTITLED" attributes="(D 8.322872)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="12" col="18" shape-name="UNTITLED" attributes="(D 8.544143)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="12" col="19" shape-name="UNTITLED" attributes="(D 8.186253)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="12" col="20" shape-name="UNTITLED" attributes="(D 7.8178186)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="12" col="21" shape-name="UNTITLED" attributes="(D 7.4579077)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="12" col="22" shape-name="UNTITLED" attributes="(D 7.0326223)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="12" col="23" shape-name="UNTITLED" attributes="(D 6.52522)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="12" col="24" shape-name="UNTITLED" attributes="(D 6.0029306)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="12" col="25" shape-name="UNTITLED" attributes="(D 5.537462)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="12" col="26" shape-name="UNTITLED" attributes="(D 5.201211)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="12" col="27" shape-name="UNTITLED" attributes="(D 5.067548)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="12" col="28" shape-name="UNTITLED" attributes="(D 5.2843575)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="12" col="29" shape-name="UNTITLED" attributes="(D 6.32209)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="12" col="30" shape-name="UNTITLED" attributes="(D 5.0488024)" x-turn="0.5" y-turn="0.5"/>
+    <bacfood_agent row="12" col="30" shape-name="BACFOOD" attributes="(IS_BEING_EATEN 1 D 10 IS_FEEDING 0)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="12" col="31" shape-name="UNTITLED" attributes="(D 3.8679724)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="12" col="32" shape-name="UNTITLED" attributes="(D 1.5387609)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="13" col="11" shape-name="UNTITLED" attributes="(D 2.97316)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="13" col="12" shape-name="UNTITLED" attributes="(D 5.2903404)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="13" col="13" shape-name="UNTITLED" attributes="(D 6.6903467)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="13" col="14" shape-name="UNTITLED" attributes="(D 7.237231)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="13" col="15" shape-name="UNTITLED" attributes="(D 7.433137)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="13" col="16" shape-name="UNTITLED" attributes="(D 7.540527)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="13" col="17" shape-name="UNTITLED" attributes="(D 7.636705)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="13" col="18" shape-name="UNTITLED" attributes="(D 7.6727734)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="13" col="19" shape-name="UNTITLED" attributes="(D 7.492524)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="13" col="20" shape-name="UNTITLED" attributes="(D 7.2113576)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="13" col="21" shape-name="UNTITLED" attributes="(D 6.856333)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="13" col="22" shape-name="UNTITLED" attributes="(D 6.4237475)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="13" col="23" shape-name="UNTITLED" attributes="(D 5.916501)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="13" col="24" shape-name="UNTITLED" attributes="(D 5.3836656)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="13" col="25" shape-name="UNTITLED" attributes="(D 4.892006)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="13" col="26" shape-name="UNTITLED" attributes="(D 4.5165973)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="13" col="27" shape-name="UNTITLED" attributes="(D 4.3576913)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="13" col="28" shape-name="UNTITLED" attributes="(D 4.52405)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="13" col="29" shape-name="UNTITLED" attributes="(D 5.0837355)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="13" col="30" shape-name="UNTITLED" attributes="(D 5.7664804)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="13" col="31" shape-name="UNTITLED" attributes="(D 3.933128)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="13" col="32" shape-name="UNTITLED" attributes="(D 2.2871788)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="14" col="10" shape-name="UNTITLED" attributes="(D 2.6302419)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="14" col="11" shape-name="UNTITLED" attributes="(D 4.6619067)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="14" col="12" shape-name="UNTITLED" attributes="(D 6.706874)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="14" col="13" shape-name="UNTITLED" attributes="(D 6.8765783)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="14" col="14" shape-name="UNTITLED" attributes="(D 6.8712296)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="14" col="15" shape-name="UNTITLED" attributes="(D 6.89388)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="14" col="16" shape-name="UNTITLED" attributes="(D 6.950306)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="14" col="17" shape-name="UNTITLED" attributes="(D 7.0122905)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="14" col="18" shape-name="UNTITLED" attributes="(D 7.022201)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="14" col="19" shape-name="UNTITLED" attributes="(D 6.9090033)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="14" col="20" shape-name="UNTITLED" attributes="(D 6.6816463)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="14" col="21" shape-name="UNTITLED" attributes="(D 6.339737)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="14" col="22" shape-name="UNTITLED" attributes="(D 5.8895345)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="14" col="23" shape-name="UNTITLED" attributes="(D 5.340875)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="14" col="24" shape-name="UNTITLED" attributes="(D 4.732305)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="14" col="25" shape-name="UNTITLED" attributes="(D 4.130299)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="14" col="26" shape-name="UNTITLED" attributes="(D 3.6203322)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="14" col="27" shape-name="UNTITLED" attributes="(D 3.3225706)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="14" col="28" shape-name="UNTITLED" attributes="(D 3.372974)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="14" col="29" shape-name="UNTITLED" attributes="(D 3.7223213)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="14" col="30" shape-name="UNTITLED" attributes="(D 4.05004)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="14" col="31" shape-name="UNTITLED" attributes="(D 3.8110955)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="14" col="32" shape-name="UNTITLED" attributes="(D 3.677049)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="14" col="33" shape-name="UNTITLED" attributes="(D 3.4192412)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="15" col="9" shape-name="UNTITLED" attributes="(D 2.6104789)" x-turn="0.5" y-turn="0.5"/>
+    <bacfood_agent row="15" col="9" shape-name="BACFOOD" attributes="(IS_BEING_EATEN 0 D 10 IS_FEEDING 0)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="15" col="10" shape-name="UNTITLED" attributes="(D 5.859235)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="15" col="11" shape-name="UNTITLED" attributes="(D 6.3373513)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="15" col="12" shape-name="UNTITLED" attributes="(D 6.540685)" x-turn="0.5" y-turn="0.5"/>
+    <bacfood_agent row="15" col="12" shape-name="BACFOOD" attributes="(IS_BEING_EATEN 0 D 10 IS_FEEDING 0)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="15" col="13" shape-name="UNTITLED" attributes="(D 7.2405024)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="15" col="14" shape-name="UNTITLED" attributes="(D 6.479834)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="15" col="15" shape-name="UNTITLED" attributes="(D 6.3221636)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="15" col="16" shape-name="UNTITLED" attributes="(D 6.3602004)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="15" col="17" shape-name="UNTITLED" attributes="(D 6.44443)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="15" col="18" shape-name="UNTITLED" attributes="(D 6.4947376)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="15" col="19" shape-name="UNTITLED" attributes="(D 6.445102)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="15" col="20" shape-name="UNTITLED" attributes="(D 6.266487)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="15" col="21" shape-name="UNTITLED" attributes="(D 5.9428816)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="15" col="22" shape-name="UNTITLED" attributes="(D 5.4589677)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="15" col="23" shape-name="UNTITLED" attributes="(D 4.8251595)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="15" col="24" shape-name="UNTITLED" attributes="(D 4.076981)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="15" col="25" shape-name="UNTITLED" attributes="(D 3.2808945)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="15" col="26" shape-name="UNTITLED" attributes="(D 2.5177484)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="15" col="27" shape-name="UNTITLED" attributes="(D 1.940528)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="15" col="28" shape-name="UNTITLED" attributes="(D 1.9240414)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="15" col="29" shape-name="UNTITLED" attributes="(D 2.3844843)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="15" col="30" shape-name="UNTITLED" attributes="(D 2.9002619)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="15" col="31" shape-name="UNTITLED" attributes="(D 3.5846882)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="15" col="32" shape-name="UNTITLED" attributes="(D 5.1906805)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="15" col="33" shape-name="UNTITLED" attributes="(D 4.0420313)" x-turn="0.5" y-turn="0.5"/>
+    <bacfood_agent row="15" col="33" shape-name="BACFOOD" attributes="(IS_BEING_EATEN 1 D 10 IS_FEEDING 0)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="15" col="34" shape-name="UNTITLED" attributes="(D 3.0638902)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="16" col="8" shape-name="UNTITLED" attributes="(D 1.4638648)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="16" col="9" shape-name="UNTITLED" attributes="(D 4.58268)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="16" col="10" shape-name="UNTITLED" attributes="(D 4.4695015)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="16" col="11" shape-name="UNTITLED" attributes="(D 4.828682)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="16" col="12" shape-name="UNTITLED" attributes="(D 5.878767)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="16" col="13" shape-name="UNTITLED" attributes="(D 5.6055994)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="16" col="14" shape-name="UNTITLED" attributes="(D 5.4892178)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="16" col="15" shape-name="UNTITLED" attributes="(D 5.5584607)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="16" col="16" shape-name="UNTITLED" attributes="(D 5.7259617)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="16" col="17" shape-name="UNTITLED" attributes="(D 5.9178777)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="16" col="18" shape-name="UNTITLED" attributes="(D 6.069786)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="16" col="19" shape-name="UNTITLED" attributes="(D 6.115854)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="16" col="20" shape-name="UNTITLED" attributes="(D 6.005252)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="16" col="21" shape-name="UNTITLED" attributes="(D 5.706334)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="16" col="22" shape-name="UNTITLED" attributes="(D 5.1867886)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="16" col="23" shape-name="UNTITLED" attributes="(D 4.4264145)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="16" col="24" shape-name="UNTITLED" attributes="(D 3.4761856)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="16" col="25" shape-name="UNTITLED" attributes="(D 2.4016755)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="16" col="26" shape-name="UNTITLED" attributes="(D 1.229238)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="16" col="29" shape-name="UNTITLED" attributes="(D 0.9915403)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="16" col="30" shape-name="UNTITLED" attributes="(D 1.5821291)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="16" col="31" shape-name="UNTITLED" attributes="(D 2.4369419)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="16" col="32" shape-name="UNTITLED" attributes="(D 3.5012665)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="16" col="33" shape-name="UNTITLED" attributes="(D 4.4943132)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="16" col="34" shape-name="UNTITLED" attributes="(D 2.2555606)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="17" col="7" shape-name="UNTITLED" attributes="(D 0.42769024)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="17" col="8" shape-name="UNTITLED" attributes="(D 1.2728388)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="17" col="9" shape-name="UNTITLED" attributes="(D 2.3974452)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="17" col="10" shape-name="UNTITLED" attributes="(D 2.607409)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="17" col="11" shape-name="UNTITLED" attributes="(D 2.6291995)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="17" col="12" shape-name="UNTITLED" attributes="(D 3.0812867)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="17" col="13" shape-name="UNTITLED" attributes="(D 3.8171802)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="17" col="14" shape-name="UNTITLED" attributes="(D 4.3143415)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="17" col="15" shape-name="UNTITLED" attributes="(D 4.699693)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="17" col="16" shape-name="UNTITLED" attributes="(D 5.073491)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="17" col="17" shape-name="UNTITLED" attributes="(D 5.4417405)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="17" col="18" shape-name="UNTITLED" attributes="(D 5.759069)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="17" col="19" shape-name="UNTITLED" attributes="(D 5.949016)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="17" col="20" shape-name="UNTITLED" attributes="(D 5.94113)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="17" col="21" shape-name="UNTITLED" attributes="(D 5.701804)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="17" col="22" shape-name="UNTITLED" attributes="(D 5.162981)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="17" col="23" shape-name="UNTITLED" attributes="(D 4.221959)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="17" col="24" shape-name="UNTITLED" attributes="(D 3.0070047)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="17" col="25" shape-name="UNTITLED" attributes="(D 1.6220963)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="17" col="31" shape-name="UNTITLED" attributes="(D 1.0799954)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="17" col="32" shape-name="UNTITLED" attributes="(D 1.8831587)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="17" col="33" shape-name="UNTITLED" attributes="(D 2.2204804)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="17" col="34" shape-name="UNTITLED" attributes="(D 1.4640719)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="17" col="35" shape-name="UNTITLED" attributes="(D 0.5325275)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="17" col="36" shape-name="UNTITLED" attributes="(D 0.19002984)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="18" col="5" shape-name="UNTITLED" attributes="(D 0.1294773)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="18" col="6" shape-name="UNTITLED" attributes="(D 0.21176936)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="18" col="7" shape-name="UNTITLED" attributes="(D 0.4379297)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="18" col="8" shape-name="UNTITLED" attributes="(D 0.8023771)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="18" col="9" shape-name="UNTITLED" attributes="(D 1.1270167)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="18" col="10" shape-name="UNTITLED" attributes="(D 0.9336064)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="18" col="13" shape-name="UNTITLED" attributes="(D 2.2678158)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="18" col="14" shape-name="UNTITLED" attributes="(D 3.2545571)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="18" col="15" shape-name="UNTITLED" attributes="(D 3.8593879)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="18" col="16" shape-name="UNTITLED" attributes="(D 4.430827)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="18" col="17" shape-name="UNTITLED" attributes="(D 5.019071)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="18" col="18" shape-name="UNTITLED" attributes="(D 5.575733)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="18" col="19" shape-name="UNTITLED" attributes="(D 5.9873676)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="18" col="20" shape-name="UNTITLED" attributes="(D 6.10845)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="18" col="21" shape-name="UNTITLED" attributes="(D 6.001704)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="18" col="22" shape-name="UNTITLED" attributes="(D 5.5449185)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="18" col="23" shape-name="UNTITLED" attributes="(D 4.291437)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="18" col="24" shape-name="UNTITLED" attributes="(D 2.709646)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="18" col="25" shape-name="UNTITLED" attributes="(D 1.0829356)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="18" col="32" shape-name="UNTITLED" attributes="(D 0.73089194)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="18" col="33" shape-name="UNTITLED" attributes="(D 1.0404478)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="18" col="34" shape-name="UNTITLED" attributes="(D 0.84771883)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="18" col="35" shape-name="UNTITLED" attributes="(D 0.4760184)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="18" col="36" shape-name="UNTITLED" attributes="(D 0.2275933)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="18" col="37" shape-name="UNTITLED" attributes="(D 0.07459169)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="19" col="4" shape-name="UNTITLED" attributes="(D 0.2989805)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="19" col="5" shape-name="UNTITLED" attributes="(D 0.30613986)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="19" col="6" shape-name="UNTITLED" attributes="(D 0.27968192)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="19" col="7" shape-name="UNTITLED" attributes="(D 0.30988204)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="19" col="8" shape-name="UNTITLED" attributes="(D 0.37173086)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="19" col="9" shape-name="UNTITLED" attributes="(D 0.37467915)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="19" col="12" shape-name="UNTITLED" attributes="(D 0.9615338)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="19" col="13" shape-name="UNTITLED" attributes="(D 2.0014286)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="19" col="14" shape-name="UNTITLED" attributes="(D 2.5790436)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="19" col="15" shape-name="UNTITLED" attributes="(D 3.054316)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="19" col="16" shape-name="UNTITLED" attributes="(D 3.77343)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="19" col="17" shape-name="UNTITLED" attributes="(D 4.6325436)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="19" col="18" shape-name="UNTITLED" attributes="(D 5.5439053)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="19" col="19" shape-name="UNTITLED" attributes="(D 6.316271)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="19" col="20" shape-name="UNTITLED" attributes="(D 6.5084076)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="19" col="21" shape-name="UNTITLED" attributes="(D 6.6596317)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="19" col="22" shape-name="UNTITLED" attributes="(D 6.7235518)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="19" col="23" shape-name="UNTITLED" attributes="(D 4.693602)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="19" col="24" shape-name="UNTITLED" attributes="(D 2.4611006)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="19" col="33" shape-name="UNTITLED" attributes="(D 0.3626998)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="19" col="34" shape-name="UNTITLED" attributes="(D 0.41036126)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="19" col="35" shape-name="UNTITLED" attributes="(D 0.29623738)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="19" col="36" shape-name="UNTITLED" attributes="(D 0.16973652)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="19" col="37" shape-name="UNTITLED" attributes="(D 0.07077626)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="20" col="3" shape-name="UNTITLED" attributes="(D 1.1622529)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="20" col="4" shape-name="UNTITLED" attributes="(D 0.8897841)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="20" col="5" shape-name="UNTITLED" attributes="(D 0.5164236)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="20" col="6" shape-name="UNTITLED" attributes="(D 0.29093802)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="20" col="7" shape-name="UNTITLED" attributes="(D 0.15020335)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="20" col="12" shape-name="UNTITLED" attributes="(D 1.8452369)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="20" col="13" shape-name="UNTITLED" attributes="(D 2.1988006)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="20" col="14" shape-name="UNTITLED" attributes="(D 2.005873)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="20" col="15" shape-name="UNTITLED" attributes="(D 2.0099006)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="20" col="16" shape-name="UNTITLED" attributes="(D 2.9794128)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="20" col="17" shape-name="UNTITLED" attributes="(D 4.1986775)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="20" col="18" shape-name="UNTITLED" attributes="(D 5.6524315)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="20" col="19" shape-name="UNTITLED" attributes="(D 7.230437)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="20" col="20" shape-name="UNTITLED" attributes="(D 6.9530444)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="20" col="21" shape-name="UNTITLED" attributes="(D 7.4048624)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="20" col="22" shape-name="UNTITLED" attributes="(D 6.3549094)" x-turn="0.5" y-turn="0.5"/>
+    <bacfood_agent row="20" col="22" shape-name="BACFOOD" attributes="(IS_BEING_EATEN 0 D 10 IS_FEEDING 0)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="20" col="23" shape-name="UNTITLED" attributes="(D 5.2983184)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="20" col="24" shape-name="UNTITLED" attributes="(D 2.4422514)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="20" col="34" shape-name="UNTITLED" attributes="(D 0.1348011)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="20" col="35" shape-name="UNTITLED" attributes="(D 0.12884317)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="20" col="36" shape-name="UNTITLED" attributes="(D 0.084339134)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="20" col="37" shape-name="UNTITLED" attributes="(D 0.03877849)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="21" col="2" shape-name="UNTITLED" attributes="(D 1.7755593)" x-turn="0.5" y-turn="0.5"/>
+    <bacfood_agent row="21" col="2" shape-name="BACFOOD" attributes="(IS_BEING_EATEN 0 D 10 IS_FEEDING 0)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="21" col="3" shape-name="UNTITLED" attributes="(D 3.7592282)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="21" col="4" shape-name="UNTITLED" attributes="(D 1.5814795)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="21" col="5" shape-name="UNTITLED" attributes="(D 0.57883644)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="21" col="6" shape-name="UNTITLED" attributes="(D 0.21744323)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="21" col="11" shape-name="UNTITLED" attributes="(D 2.0961246)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="21" col="12" shape-name="UNTITLED" attributes="(D 4.221268)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="21" col="13" shape-name="UNTITLED" attributes="(D 2.9439156)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="21" col="14" shape-name="UNTITLED" attributes="(D 1.2372669)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="21" col="16" shape-name="UNTITLED" attributes="(D 1.938825)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="21" col="17" shape-name="UNTITLED" attributes="(D 3.5303223)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="21" col="18" shape-name="UNTITLED" attributes="(D 5.6408687)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="21" col="19" shape-name="UNTITLED" attributes="(D 5.955275)" x-turn="0.5" y-turn="0.5"/>
+    <bacfood_agent row="21" col="19" shape-name="BACFOOD" attributes="(IS_BEING_EATEN 0 D 10 IS_FEEDING 0)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="21" col="20" shape-name="UNTITLED" attributes="(D 6.6723866)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="21" col="21" shape-name="UNTITLED" attributes="(D 6.0085692)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="21" col="22" shape-name="UNTITLED" attributes="(D 5.9929066)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="21" col="23" shape-name="UNTITLED" attributes="(D 4.058466)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="21" col="24" shape-name="UNTITLED" attributes="(D 2.0099323)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="22" col="2" shape-name="UNTITLED" attributes="(D 3.343009)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="22" col="3" shape-name="UNTITLED" attributes="(D 2.2931802)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="22" col="4" shape-name="UNTITLED" attributes="(D 1.0980703)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="22" col="11" shape-name="UNTITLED" attributes="(D 4.16323)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="22" col="12" shape-name="UNTITLED" attributes="(D 5.6256933)" x-turn="0.5" y-turn="0.5"/>
+    <bacfood_agent row="22" col="12" shape-name="BACFOOD" attributes="(IS_BEING_EATEN 0 D 10 IS_FEEDING 0)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="22" col="13" shape-name="UNTITLED" attributes="(D 4.1183267)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="22" col="16" shape-name="UNTITLED" attributes="(D 1.2471595)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="22" col="17" shape-name="UNTITLED" attributes="(D 2.3439615)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="22" col="18" shape-name="UNTITLED" attributes="(D 3.381342)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="22" col="19" shape-name="UNTITLED" attributes="(D 4.2774086)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="22" col="20" shape-name="UNTITLED" attributes="(D 3.7282925)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="22" col="21" shape-name="UNTITLED" attributes="(D 3.9641209)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="22" col="22" shape-name="UNTITLED" attributes="(D 3.9049497)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="22" col="23" shape-name="UNTITLED" attributes="(D 2.932906)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="22" col="24" shape-name="UNTITLED" attributes="(D 1.5395812)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="23" col="2" shape-name="UNTITLED" attributes="(D 1.0788558)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="23" col="3" shape-name="UNTITLED" attributes="(D 0.97241426)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="23" col="4" shape-name="UNTITLED" attributes="(D 0.51762116)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="23" col="10" shape-name="UNTITLED" attributes="(D 1.4435365)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="23" col="11" shape-name="UNTITLED" attributes="(D 4.556824)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="23" col="12" shape-name="UNTITLED" attributes="(D 5.3839397)" x-turn="0.5" y-turn="0.5"/>
+    <bacfood_agent row="23" col="12" shape-name="BACFOOD" attributes="(IS_BEING_EATEN 0 D 10 IS_FEEDING 0)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="23" col="13" shape-name="UNTITLED" attributes="(D 3.5295691)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="23" col="15" shape-name="UNTITLED" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="23" col="16" shape-name="UNTITLED" attributes="(D 0.7063352)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="23" col="17" shape-name="UNTITLED" attributes="(D 1.21836)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="23" col="18" shape-name="UNTITLED" attributes="(D 1.263794)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="23" col="21" shape-name="UNTITLED" attributes="(D 2.2152977)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="23" col="22" shape-name="UNTITLED" attributes="(D 2.730319)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="23" col="23" shape-name="UNTITLED" attributes="(D 2.2289286)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="23" col="24" shape-name="UNTITLED" attributes="(D 1.2154865)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="24" col="10" shape-name="UNTITLED" attributes="(D 1.2173246)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="24" col="10" shape-name="UNTITLED" attributes="(D 1.2173247)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="24" col="11" shape-name="UNTITLED" attributes="(D 2.6205308)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="24" col="12" shape-name="UNTITLED" attributes="(D 3.4493809)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="24" col="15" shape-name="UNTITLED" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="24" col="16" shape-name="UNTITLED" attributes="(D 0.36031008)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="24" col="17" shape-name="UNTITLED" attributes="(D 0.55948174)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="24" col="18" shape-name="UNTITLED" attributes="(D 0.4557639)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="24" col="21" shape-name="UNTITLED" attributes="(D 2.1669037)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="24" col="22" shape-name="UNTITLED" attributes="(D 2.5720994)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="24" col="23" shape-name="UNTITLED" attributes="(D 2.0373175)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="24" col="24" shape-name="UNTITLED" attributes="(D 1.0936587)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="25" col="9" shape-name="UNTITLED" attributes="(D 0.2771386)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="25" col="10" shape-name="UNTITLED" attributes="(D 0.8052329)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="25" col="11" shape-name="UNTITLED" attributes="(D 1.2585932)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="25" col="12" shape-name="UNTITLED" attributes="(D 1.1769934)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="25" col="14" shape-name="UNTITLED" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="25" col="15" shape-name="UNTITLED" attributes="(D 0.05390968)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="25" col="16" shape-name="UNTITLED" attributes="(D 0.17545411)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="25" col="17" shape-name="UNTITLED" attributes="(D 0.20376715)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="25" col="21" shape-name="UNTITLED" attributes="(D 3.8802173)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="25" col="22" shape-name="UNTITLED" attributes="(D 3.3540444)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="25" col="23" shape-name="UNTITLED" attributes="(D 2.2546473)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="25" col="24" shape-name="UNTITLED" attributes="(D 1.1218895)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="26" col="9" shape-name="UNTITLED" attributes="(D 0.30332166)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="26" col="10" shape-name="UNTITLED" attributes="(D 0.467875)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="26" col="11" shape-name="UNTITLED" attributes="(D 0.43161696)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="26" col="14" shape-name="UNTITLED" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="26" col="15" shape-name="UNTITLED" attributes="(D 0.040223178)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="26" col="16" shape-name="UNTITLED" attributes="(D 0.08382951)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="26" col="17" shape-name="UNTITLED" attributes="(D 0.0801775)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="26" col="21" shape-name="UNTITLED" attributes="(D 3.0516315)" x-turn="0.5" y-turn="0.5"/>
+    <bacfood_agent row="26" col="21" shape-name="BACFOOD" attributes="(IS_BEING_EATEN 0 D 10 IS_FEEDING 0)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="26" col="22" shape-name="UNTITLED" attributes="(D 4.7092285)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="26" col="23" shape-name="UNTITLED" attributes="(D 2.5054696)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="26" col="24" shape-name="UNTITLED" attributes="(D 1.1392992)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="27" col="8" shape-name="UNTITLED" attributes="(D 0.4171815)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="27" col="9" shape-name="UNTITLED" attributes="(D 0.46827328)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="27" col="10" shape-name="UNTITLED" attributes="(D 0.33132893)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="27" col="14" shape-name="UNTITLED" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="27" col="15" shape-name="UNTITLED" attributes="(D 0.023158312)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="27" col="16" shape-name="UNTITLED" attributes="(D 0.039523646)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="27" col="17" shape-name="UNTITLED" attributes="(D 0.033113346)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="27" col="21" shape-name="UNTITLED" attributes="(D 3.6171172)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="27" col="22" shape-name="UNTITLED" attributes="(D 2.977418)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="27" col="23" shape-name="UNTITLED" attributes="(D 1.918703)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="27" col="24" shape-name="UNTITLED" attributes="(D 0.9298624)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="28" col="7" shape-name="UNTITLED" attributes="(D 1.1478237)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="28" col="8" shape-name="UNTITLED" attributes="(D 1.2004527)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="28" col="9" shape-name="UNTITLED" attributes="(D 0.82126117)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="28" col="10" shape-name="UNTITLED" attributes="(D 0.38916743)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="28" col="14" shape-name="UNTITLED" attributes="(D 0.0039851335)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="28" col="15" shape-name="UNTITLED" attributes="(D 0.01289423)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="28" col="16" shape-name="UNTITLED" attributes="(D 0.017993418)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="28" col="17" shape-name="UNTITLED" attributes="(D 0.0127766915)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="28" col="21" shape-name="UNTITLED" attributes="(D 1.4910617)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="28" col="22" shape-name="UNTITLED" attributes="(D 1.6646386)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="28" col="23" shape-name="UNTITLED" attributes="(D 1.2621006)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="28" col="24" shape-name="UNTITLED" attributes="(D 0.6614475)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="29" col="7" shape-name="UNTITLED" attributes="(D 3.390842)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="29" col="8" shape-name="UNTITLED" attributes="(D 2.4155445)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="29" col="9" shape-name="UNTITLED" attributes="(D 1.2271515)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="29" col="10" shape-name="UNTITLED" attributes="(D 0.40407974)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="29" col="14" shape-name="UNTITLED" attributes="(D 0.003046304)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="29" col="15" shape-name="UNTITLED" attributes="(D 0.0064496435)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="29" col="16" shape-name="UNTITLED" attributes="(D 0.0067894915)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="29" col="21" shape-name="UNTITLED" attributes="(D 0.6824907)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="29" col="22" shape-name="UNTITLED" attributes="(D 0.92798555)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="29" col="23" shape-name="UNTITLED" attributes="(D 0.80362123)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="29" col="24" shape-name="UNTITLED" attributes="(D 0.45384133)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="30" col="7" shape-name="UNTITLED" attributes="(D 2.5393724)" x-turn="0.5" y-turn="0.5"/>
+    <bacfood_agent row="30" col="7" shape-name="BACFOOD" attributes="(IS_BEING_EATEN 0 D 10 IS_FEEDING 0)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="30" col="8" shape-name="UNTITLED" attributes="(D 3.8437319)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="30" col="9" shape-name="UNTITLED" attributes="(D 1.2677208)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="30" col="13" shape-name="UNTITLED" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="30" col="14" shape-name="UNTITLED" attributes="(D 0.0017518251)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="30" col="15" shape-name="UNTITLED" attributes="(D 0.0030730674)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="30" col="16" shape-name="UNTITLED" attributes="(D 0.002721081)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="30" col="21" shape-name="UNTITLED" attributes="(D 0.3109219)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="30" col="22" shape-name="UNTITLED" attributes="(D 0.5611985)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="30" col="23" shape-name="UNTITLED" attributes="(D 0.57056403)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="30" col="24" shape-name="UNTITLED" attributes="(D 0.35029656)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="31" col="7" shape-name="UNTITLED" attributes="(D 2.9229155)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="31" col="8" shape-name="UNTITLED" attributes="(D 1.6916618)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="31" col="13" shape-name="UNTITLED" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="31" col="14" shape-name="UNTITLED" attributes="(D 8.879289E-4)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="31" col="15" shape-name="UNTITLED" attributes="(D 0.0013701734)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="31" col="16" shape-name="UNTITLED" attributes="(D 0.0010225514)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="31" col="21" shape-name="UNTITLED" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="31" col="22" shape-name="UNTITLED" attributes="(D 0.4353231)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="31" col="23" shape-name="UNTITLED" attributes="(D 0.56714237)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="31" col="24" shape-name="UNTITLED" attributes="(D 0.3767851)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="32" col="12" shape-name="UNTITLED" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="32" col="13" shape-name="UNTITLED" attributes="(D 1.3208383E-4)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="32" col="14" shape-name="UNTITLED" attributes="(D 4.301696E-4)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="32" col="15" shape-name="UNTITLED" attributes="(D 4.983157E-4)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="32" col="21" shape-name="UNTITLED" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="32" col="22" shape-name="UNTITLED" attributes="(D 0.6129515)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="32" col="23" shape-name="UNTITLED" attributes="(D 0.88589865)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="32" col="24" shape-name="UNTITLED" attributes="(D 0.5897018)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="33" col="12" shape-name="UNTITLED" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="33" col="13" shape-name="UNTITLED" attributes="(D 9.819675E-5)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="33" col="14" shape-name="UNTITLED" attributes="(D 2.0283718E-4)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="33" col="15" shape-name="UNTITLED" attributes="(D 1.9291978E-4)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="33" col="21" shape-name="UNTITLED" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="33" col="22" shape-name="UNTITLED" attributes="(D 1.1305852)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="33" col="23" shape-name="UNTITLED" attributes="(D 1.7738006)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="33" col="24" shape-name="UNTITLED" attributes="(D 1.0961235)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="34" col="12" shape-name="UNTITLED" attributes="(D 1.7166793E-5)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="34" col="13" shape-name="UNTITLED" attributes="(D 5.7866004E-5)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="34" col="14" shape-name="UNTITLED" attributes="(D 9.012273E-5)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="34" col="15" shape-name="UNTITLED" attributes="(D 7.075334E-5)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="34" col="21" shape-name="UNTITLED" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="34" col="22" shape-name="UNTITLED" attributes="(D 2.135589)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="34" col="23" shape-name="UNTITLED" attributes="(D 3.9825952)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="34" col="24" shape-name="UNTITLED" attributes="(D 2.0209916)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="35" col="12" shape-name="UNTITLED" attributes="(D 1.0804981E-5)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="35" col="13" shape-name="UNTITLED" attributes="(D 2.605313E-5)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="35" col="14" shape-name="UNTITLED" attributes="(D 2.9034374E-5)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="35" col="21" shape-name="UNTITLED" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="35" col="22" shape-name="UNTITLED" attributes="(D 3.4291756)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="35" col="23" shape-name="UNTITLED" attributes="(D 3.3280745)" x-turn="0.5" y-turn="0.5"/>
+    <bacfood_agent row="35" col="23" shape-name="BACFOOD" attributes="(IS_BEING_EATEN 0 D 10 IS_FEEDING 0)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="35" col="24" shape-name="UNTITLED" attributes="(D 3.0052478)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="36" col="13" shape-name="UNTITLED" attributes="(D 6.510978E-6)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="36" col="22" shape-name="UNTITLED" attributes="(D 1.5811136)" x-turn="0.5" y-turn="0.5"/>
+    <hand_agent row="36" col="23" shape-name="UNTITLED" attributes="(D 2.8952785)" x-turn="0.5" y-turn="0.5"/>
+  </agent-matrix>
+</world>

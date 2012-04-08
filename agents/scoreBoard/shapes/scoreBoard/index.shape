@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<shape-manager name="SCOREBOARD" relative-texture-path="Landscapes">
+  <tile texture="Deep Forest.jpg"/>
+</shape-manager>

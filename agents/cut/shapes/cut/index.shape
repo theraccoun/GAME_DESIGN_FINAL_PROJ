@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<shape-manager name="CUT" relative-texture-path="Fire">
+  <tile texture="Lava Cracks.jpg"/>
+</shape-manager>

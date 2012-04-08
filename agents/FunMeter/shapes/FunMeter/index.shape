@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<shape-manager name="FUNMETER" relative-texture-path="Plants">
+  <tile texture="Overgrown Fence.jpg"/>
+</shape-manager>

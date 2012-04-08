@@ -213,6 +213,9 @@
         <test expression1="d[left]" operator="&gt;=" expression2="d[up]"/>
         <test expression1="d[left]" operator="&gt;=" expression2="d[down]"/>
         <test expression1="Is_Eating" operator="!=" expression2="1"/>
+        <see shape="UNTITLED Hand">
+          <direction dcol="-1"/>
+        </see>
       </if>
       <then>
         <move>
@@ -226,6 +229,9 @@
         <test expression1="d[right]" operator="&gt;=" expression2="d[left]"/>
         <test expression1="d[right]" operator="&gt;=" expression2="d[up]"/>
         <test expression1="d[right]" operator="&gt;=" expression2="d[down]"/>
+        <see shape="UNTITLED Hand">
+          <direction dcol="1"/>
+        </see>
       </if>
       <then>
         <move>
@@ -239,6 +245,9 @@
         <test expression1="d[up]" operator="&gt;=" expression2="d[right]"/>
         <test expression1="d[up]" operator="&gt;=" expression2="d[right]"/>
         <test expression1="d[up]" operator="&gt;=" expression2="d[down]"/>
+        <see shape="UNTITLED Hand">
+          <direction drow="1"/>
+        </see>
       </if>
       <then>
         <move>
@@ -252,6 +261,9 @@
         <test expression1="d[down]" operator="&gt;=" expression2="d[right]"/>
         <test expression1="d[down]" operator="&gt;=" expression2="d[up]"/>
         <test expression1="d[down]" operator="&gt;=" expression2="d[left]"/>
+        <see shape="UNTITLED Hand">
+          <direction drow="-1"/>
+        </see>
       </if>
       <then>
         <move>
