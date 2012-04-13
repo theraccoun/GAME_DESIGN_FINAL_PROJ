@@ -3,8 +3,15 @@
   <method disclosed="true">
     <while-running/>
     <rule>
-      <if/>
-      <then/>
+      <if>
+        <once-every seconds="10"/>
+        <percent-chance expression="5"/>
+      </if>
+      <then>
+        <new shape="WHITE_BLOOD_CELL White_Blood_Cell">
+          <direction dcol="-1"/>
+        </new>
+      </then>
     </rule>
   </method>
 </behavior>

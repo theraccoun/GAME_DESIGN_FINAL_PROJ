@@ -3,8 +3,165 @@
   <method disclosed="true">
     <while-running/>
     <rule>
+      <if>
+        <test expression1="Consume_Timer" operator="&gt;=" expression2="5"/>
+      </if>
+      <then>
+        <set attribute="CONSUME_TIMER" value="0"/>
+        <set attribute="IS_CONSUMING" value="0"/>
+        <change shape="WHITE_BLOOD_CELL White_Blood_Cell">
+          <direction/>
+        </change>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <once-every seconds="0.1"/>
+        <test expression1="Is_Consuming" expression2="1"/>
+      </if>
+      <then>
+        <set attribute="CONSUME_TIMER" value="Consume_Timer + 0.1"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see-a class-name="Bacteria">
+          <direction dcol="-1"/>
+        </see-a>
+      </if>
+      <then>
+        <change shape="DESTROYING White_Blood_Cell">
+          <direction/>
+        </change>
+        <message selector="Being_Consumed">
+          <direction dcol="-1"/>
+        </message>
+        <set attribute="IS_CONSUMING" value="1"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see-a class-name="Bacteria">
+          <direction drow="1"/>
+        </see-a>
+      </if>
+      <then>
+        <change shape="DESTROYING White_Blood_Cell">
+          <direction/>
+        </change>
+        <message selector="Being_Consumed">
+          <direction drow="1"/>
+        </message>
+        <set attribute="IS_CONSUMING" value="1"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see-a class-name="Bacteria">
+          <direction dcol="1"/>
+        </see-a>
+      </if>
+      <then>
+        <change shape="DESTROYING White_Blood_Cell">
+          <direction/>
+        </change>
+        <message selector="Being_Consumed">
+          <direction dcol="1"/>
+        </message>
+        <set attribute="IS_CONSUMING" value="1"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see-a class-name="Bacteria">
+          <direction drow="-1"/>
+        </see-a>
+      </if>
+      <then>
+        <change shape="DESTROYING White_Blood_Cell">
+          <direction/>
+        </change>
+        <message selector="Being_Consumed">
+          <direction drow="-1"/>
+        </message>
+        <set attribute="IS_CONSUMING" value="1"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <test expression1="b[up]" operator="&gt;=" expression2="b[left]"/>
+        <test expression1="b[up]" operator="&gt;=" expression2="b[up]"/>
+        <test expression1="b[up]" operator="&gt;=" expression2="b[down]"/>
+        <test expression1="Is_Eating" operator="!=" expression2="1"/>
+        <see shape="UNTITLED Hand">
+          <direction drow="1"/>
+        </see>
+      </if>
+      <then>
+        <move>
+          <direction drow="1"/>
+        </move>
+        <set attribute="IS_CONSUMING" value="1"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <test expression1="b[left]" operator="&gt;=" expression2="b[right]"/>
+        <test expression1="b[left]" operator="&gt;=" expression2="b[up]"/>
+        <test expression1="b[left]" operator="&gt;=" expression2="b[down]"/>
+        <test expression1="Is_Eating" operator="!=" expression2="1"/>
+        <see shape="UNTITLED Hand">
+          <direction dcol="-1"/>
+        </see>
+      </if>
+      <then>
+        <move>
+          <direction dcol="-1"/>
+        </move>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <test expression1="b[right]" operator="&gt;=" expression2="b[left]"/>
+        <test expression1="b[right]" operator="&gt;=" expression2="b[up]"/>
+        <test expression1="b[right]" operator="&gt;=" expression2="b[down]"/>
+        <test expression1="Is_Eating" operator="!=" expression2="1"/>
+        <see shape="UNTITLED Hand">
+          <direction dcol="1"/>
+        </see>
+      </if>
+      <then>
+        <move>
+          <direction dcol="1"/>
+        </move>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <test expression1="b[down]" operator="&gt;=" expression2="b[right]"/>
+        <test expression1="b[down]" operator="&gt;=" expression2="b[up]"/>
+        <test expression1="b[down]" operator="&gt;=" expression2="b[left]"/>
+        <test expression1="Is_Eating" operator="!=" expression2="1"/>
+        <see shape="UNTITLED Hand">
+          <direction drow="-1"/>
+        </see>
+      </if>
+      <then>
+        <move>
+          <direction drow="-1"/>
+        </move>
+      </then>
+    </rule>
+  </method>
+  <method disclosed="true">
+    <on selector="Die"/>
+    <rule>
       <if/>
-      <then/>
+      <then>
+        <erase>
+          <direction/>
+        </erase>
+      </then>
     </rule>
   </method>
 </behavior>

@@ -19,9 +19,9 @@
         </see>
       </if>
       <then>
-        <erase>
+        <message selector="Die">
           <direction dcol="1"/>
-        </erase>
+        </message>
       </then>
     </rule>
     <rule>
@@ -31,9 +31,9 @@
         </see>
       </if>
       <then>
-        <erase>
+        <message selector="Die">
           <direction drow="1"/>
-        </erase>
+        </message>
       </then>
     </rule>
     <rule>
@@ -43,9 +43,9 @@
         </see>
       </if>
       <then>
-        <erase>
+        <message selector="Die">
           <direction dcol="-1"/>
-        </erase>
+        </message>
       </then>
     </rule>
     <rule>
@@ -55,9 +55,57 @@
         </see>
       </if>
       <then>
-        <erase>
+        <message selector="Die">
           <direction drow="-1"/>
-        </erase>
+        </message>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see-a class-name="BACFOOD">
+          <direction dcol="-1"/>
+        </see-a>
+      </if>
+      <then>
+        <message selector="Die">
+          <direction dcol="-1"/>
+        </message>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see-a class-name="BACFOOD">
+          <direction drow="1"/>
+        </see-a>
+      </if>
+      <then>
+        <message selector="Die">
+          <direction drow="1"/>
+        </message>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see-a class-name="BACFOOD">
+          <direction dcol="1"/>
+        </see-a>
+      </if>
+      <then>
+        <message selector="Die">
+          <direction dcol="1"/>
+        </message>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see-a class-name="BACFOOD">
+          <direction drow="-1"/>
+        </see-a>
+      </if>
+      <then>
+        <message selector="Die">
+          <direction drow="-1"/>
+        </message>
       </then>
     </rule>
     <rule>

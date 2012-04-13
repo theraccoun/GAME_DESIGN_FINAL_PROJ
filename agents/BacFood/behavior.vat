@@ -27,6 +27,18 @@
         <see-a negated="true" class-name="Bacteria">
           <direction drow="-1"/>
         </see-a>
+        <see-a negated="true" class-name="Controlbac">
+          <direction drow="-1"/>
+        </see-a>
+        <see-a negated="true" class-name="Controlbac">
+          <direction dcol="-1"/>
+        </see-a>
+        <see-a negated="true" class-name="Controlbac">
+          <direction dcol="1"/>
+        </see-a>
+        <see-a negated="true" class-name="Controlbac">
+          <direction drow="1"/>
+        </see-a>
       </if>
       <then>
         <change shape="BACFOOD Bacfood">
@@ -52,7 +64,7 @@
       </then>
     </rule>
   </method>
-  <method>
+  <method disclosed="true">
     <on selector="Return_If_Eating"/>
     <rule>
       <if>
@@ -82,6 +94,17 @@
           <direction/>
         </change>
         <set attribute="IS_BEING_EATEN" value="1"/>
+      </then>
+    </rule>
+  </method>
+  <method disclosed="true">
+    <on selector="Die"/>
+    <rule>
+      <if/>
+      <then>
+        <erase>
+          <direction/>
+        </erase>
       </then>
     </rule>
   </method>

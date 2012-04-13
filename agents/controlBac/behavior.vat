@@ -1,0 +1,272 @@
+<?xml version="1.0"?>
+<behavior comments="I am user controlled">
+  <method disclosed="true">
+    <while-running/>
+    <rule>
+      <if>
+        <test expression1="Hunger" operator="&lt;=" expression2="0"/>
+      </if>
+      <then>
+        <message selector="Die">
+          <direction/>
+        </message>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <test expression1="Eat_Timer" operator="&gt;=" expression2="2"/>
+      </if>
+      <then>
+        <set attribute="HUNGER" value="Hunger+10"/>
+        <set attribute="EAT_TIMER" value="0"/>
+        <set attribute="IS_EATING" value="0"/>
+        <move-random distance="2"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <test expression1="Is_Eating" expression2="1"/>
+        <once-every seconds="0.1"/>
+      </if>
+      <then>
+        <set attribute="EAT_TIMER" value="Eat_Timer + 0.1"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <test expression1="Is_Eating" expression2="1"/>
+        <test expression1="Eat_Timer" operator="&lt;" expression2="5"/>
+      </if>
+      <then/>
+    </rule>
+    <rule>
+      <if>
+        <key label="left arrow"/>
+        <see shape="UNTITLED Hand">
+          <direction dcol="-1"/>
+        </see>
+      </if>
+      <then>
+        <move>
+          <direction dcol="-1"/>
+        </move>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <key label="right arrow"/>
+        <see shape="UNTITLED Hand">
+          <direction dcol="1"/>
+        </see>
+      </if>
+      <then>
+        <move>
+          <direction dcol="1"/>
+        </move>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <key label="up arrow"/>
+        <see shape="UNTITLED Hand">
+          <direction drow="1"/>
+        </see>
+      </if>
+      <then>
+        <move>
+          <direction drow="1"/>
+        </move>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <key label="down arrow"/>
+        <see shape="UNTITLED Hand">
+          <direction drow="-1"/>
+        </see>
+      </if>
+      <then>
+        <move>
+          <direction drow="-1"/>
+        </move>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see shape="BACFOOD Bacfood">
+          <direction dcol="-1"/>
+        </see>
+        <key label="E"/>
+      </if>
+      <then>
+        <message selector="Set_Being_Eaten">
+          <direction dcol="-1"/>
+        </message>
+        <set attribute="IS_EATING" value="1"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see shape="BACFOOD Bacfood">
+          <direction dcol="1"/>
+        </see>
+        <key label="E"/>
+      </if>
+      <then>
+        <message selector="Set_Being_Eaten">
+          <direction dcol="1"/>
+        </message>
+        <set attribute="IS_EATING" value="1"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see shape="BACFOOD Bacfood">
+          <direction drow="1"/>
+        </see>
+        <key label="E"/>
+      </if>
+      <then>
+        <message selector="Set_Being_Eaten">
+          <direction drow="1"/>
+        </message>
+        <set attribute="IS_EATING" value="1"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see shape="BACFOOD Bacfood">
+          <direction drow="-1"/>
+        </see>
+        <key label="E"/>
+      </if>
+      <then>
+        <message selector="Set_Being_Eaten">
+          <direction drow="-1"/>
+        </message>
+        <set attribute="IS_EATING" value="1"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <test expression1="Is_Eating" operator="!=" expression2="1"/>
+        <once-every seconds="0.3"/>
+      </if>
+      <then>
+        <set attribute="HUNGER" value="Hunger-1"/>
+      </then>
+    </rule>
+  </method>
+  <method disclosed="true">
+    <when-creating-new-agent/>
+    <rule>
+      <if/>
+      <then>
+        <set attribute="HUNGER" value="10"/>
+        <set attribute="@SICK" value="@Sick + 1"/>
+      </then>
+    </rule>
+  </method>
+  <method disclosed="true">
+    <on selector="Reproduce"/>
+    <rule>
+      <if>
+        <percent-chance expression="3"/>
+        <see shape="BACTERIA Bacteria">
+          <direction/>
+        </see>
+      </if>
+      <then>
+        <new shape="SUPER_MUTANT Bacteria">
+          <direction dcol="1"/>
+        </new>
+        <set attribute="@EPIDEMIC" value="Epidemic + 1"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see shape="BACTERIA Bacteria">
+          <direction/>
+        </see>
+        <see shape="UNTITLED Hand">
+          <direction dcol="1"/>
+        </see>
+      </if>
+      <then>
+        <new shape="BACTERIA Bacteria">
+          <direction dcol="1"/>
+        </new>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see shape="BACTERIA Bacteria">
+          <direction/>
+        </see>
+        <see shape="UNTITLED Hand">
+          <direction dcol="-1"/>
+        </see>
+      </if>
+      <then>
+        <new shape="BACTERIA Bacteria">
+          <direction dcol="-1"/>
+        </new>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see shape="BACTERIA Bacteria">
+          <direction/>
+        </see>
+        <see shape="UNTITLED Hand">
+          <direction drow="1"/>
+        </see>
+      </if>
+      <then>
+        <new shape="BACTERIA Bacteria">
+          <direction drow="1"/>
+        </new>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see shape="BACTERIA Bacteria">
+          <direction/>
+        </see>
+        <see shape="UNTITLED Hand">
+          <direction drow="-1"/>
+        </see>
+      </if>
+      <then>
+        <new shape="BACTERIA Bacteria">
+          <direction drow="-1"/>
+        </new>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see shape="SUPER_MUTANT Bacteria">
+          <direction/>
+        </see>
+      </if>
+      <then>
+        <new shape="SUPER_MUTANT Bacteria">
+          <direction dcol="1"/>
+        </new>
+        <set attribute="@EPIDEMIC" value="@Epidemic + 1"/>
+      </then>
+    </rule>
+  </method>
+  <method disclosed="true">
+    <on selector="Die"/>
+    <rule>
+      <if/>
+      <then>
+        <set attribute="@SICK" value="@Sick - 1"/>
+        <erase>
+          <direction/>
+        </erase>
+      </then>
+    </rule>
+  </method>
+</behavior>

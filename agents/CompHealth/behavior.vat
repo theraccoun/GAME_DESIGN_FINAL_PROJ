@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<behavior comments="I am user controlled">
+  <method disclosed="true">
+    <while-running/>
+    <rule>
+      <if>
+        <test expression1="@Sick" operator="&gt;=" expression2="10"/>
+        <test expression1="@Sick" operator="&lt;" expression2="20"/>
+        <test expression1="@Mod_Sick" expression2="0"/>
+      </if>
+      <then>
+        <broadcast class-name="Healthmeter" selector="Subtract"/>
+        <set attribute="@MOD_SICK" value="1"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <test expression1="@Sick" operator="&gt;=" expression2="10"/>
+        <test expression1="@Sick" operator="&lt;" expression2="20"/>
+        <test expression1="@Mod_Sick" expression2="2"/>
+      </if>
+      <then>
+        <broadcast class-name="Healthmeter" selector="Move_Up"/>
+        <set attribute="@MOD_SICK" value="1"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <test expression1="@Sick" operator="&gt;=" expression2="20"/>
+        <test expression1="@Sick" operator="&lt;" expression2="30"/>
+        <test expression1="@Mod_Sick" expression2="1"/>
+      </if>
+      <then>
+        <broadcast class-name="Healthmeter" selector="Subtract"/>
+        <set attribute="@MOD_SICK" value="2"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <test expression1="@Sick" operator="&gt;=" expression2="20"/>
+        <test expression1="@Sick" operator="&lt;" expression2="30"/>
+        <test expression1="@Mod_Sick" expression2="3"/>
+      </if>
+      <then>
+        <broadcast class-name="Healthmeter" selector="Move_Up"/>
+        <set attribute="@MOD_SICK" value="2"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <test expression1="@Sick" operator="&gt;=" expression2="30"/>
+        <test expression1="@Sick" operator="&lt;" expression2="40"/>
+        <test expression1="@Mod_Sick" expression2="2"/>
+      </if>
+      <then>
+        <broadcast class-name="Healthmeter" selector="Subtract"/>
+        <set attribute="@MOD_SICK" value="3"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <test expression1="@Sick" operator="&gt;=" expression2="30"/>
+        <test expression1="@Sick" operator="&lt;" expression2="40"/>
+        <test expression1="@Mod_Sick" expression2="4"/>
+      </if>
+      <then>
+        <broadcast class-name="Healthmeter" selector="Move_Up"/>
+        <set attribute="@MOD_SICK" value="3"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <test expression1="@Sick" operator="&gt;=" expression2="40"/>
+        <test expression1="@Sick" operator="&lt;" expression2="50"/>
+        <test expression1="@Mod_Sick" expression2="4"/>
+      </if>
+      <then>
+        <broadcast class-name="Healthmeter" selector="Subtract"/>
+        <set attribute="@MOD_SICK" value="4"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <test expression1="@Sick" operator="&gt;=" expression2="40"/>
+        <test expression1="@Sick" operator="&lt;" expression2="50"/>
+        <test expression1="@Mod_Sick" expression2="6"/>
+      </if>
+      <then>
+        <broadcast class-name="Healthmeter" selector="Move_Up"/>
+        <set attribute="@MOD_SICK" value="4"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <test expression1="@Sick" operator="&gt;=" expression2="50"/>
+        <test expression1="@Sick" operator="&lt;" expression2="60"/>
+        <test expression1="@Mod_Sick" expression2="4"/>
+      </if>
+      <then>
+        <broadcast class-name="Healthmeter" selector="Subtract"/>
+        <set attribute="@MOD_SICK" value="5"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <test expression1="@Sick" operator="&gt;=" expression2="50"/>
+        <test expression1="@Sick" operator="&lt;" expression2="60"/>
+        <test expression1="@Mod_Sick" expression2="6"/>
+      </if>
+      <then>
+        <broadcast class-name="Healthmeter" selector="Move_Up"/>
+        <set attribute="@MOD_SICK" value="5"/>
+      </then>
+    </rule>
+  </method>
+</behavior>
