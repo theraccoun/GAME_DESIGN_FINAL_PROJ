@@ -4,6 +4,16 @@
     <while-running/>
     <rule>
       <if>
+        <once-every seconds="20"/>
+      </if>
+      <then>
+        <message selector="Die">
+          <direction/>
+        </message>
+      </then>
+    </rule>
+    <rule>
+      <if>
         <test expression1="Consume_Timer" operator="&gt;=" expression2="5"/>
       </if>
       <then>
@@ -84,6 +94,58 @@
         <message selector="Being_Consumed">
           <direction drow="-1"/>
         </message>
+        <set attribute="IS_CONSUMING" value="1"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see-a class-name="White_Blood_Cell">
+          <direction drow="1"/>
+        </see-a>
+      </if>
+      <then>
+        <change shape="DESTROYING White_Blood_Cell">
+          <direction/>
+        </change>
+        <set attribute="IS_CONSUMING" value="1"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see-a class-name="White_Blood_Cell">
+          <direction dcol="-1"/>
+        </see-a>
+      </if>
+      <then>
+        <change shape="DESTROYING White_Blood_Cell">
+          <direction/>
+        </change>
+        <set attribute="IS_CONSUMING" value="1"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see-a class-name="White_Blood_Cell">
+          <direction dcol="1"/>
+        </see-a>
+      </if>
+      <then>
+        <change shape="DESTROYING White_Blood_Cell">
+          <direction/>
+        </change>
+        <set attribute="IS_CONSUMING" value="1"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see-a class-name="White_Blood_Cell">
+          <direction drow="-1"/>
+        </see-a>
+      </if>
+      <then>
+        <change shape="DESTROYING White_Blood_Cell">
+          <direction/>
+        </change>
         <set attribute="IS_CONSUMING" value="1"/>
       </then>
     </rule>

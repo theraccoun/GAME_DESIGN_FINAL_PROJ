@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<behavior comments="I am user controlled">
+  <method disclosed="true">
+    <while-running/>
+    <rule>
+      <if>
+        <current-world world="Tut_BacMove"/>
+        <key label="N"/>
+      </if>
+      <then>
+        <switch-to-world world="play"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <current-world world="play"/>
+        <key label="P"/>
+      </if>
+      <then>
+        <switch-to-world world="Tut_BacMove"/>
+      </then>
+    </rule>
+  </method>
+</behavior>

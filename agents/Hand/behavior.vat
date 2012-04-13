@@ -76,6 +76,12 @@
       </then>
     </rule>
     <rule>
+      <if>
+        <key label="C"/>
+      </if>
+      <then/>
+    </rule>
+    <rule>
       <if/>
       <then>
         <set attribute="B" value="0.25*(B[left] + B[right] + B[down] + B[up])"/>

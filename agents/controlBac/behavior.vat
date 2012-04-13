@@ -4,6 +4,86 @@
     <while-running/>
     <rule>
       <if>
+        <see shape="WHITE_BLOOD_CELL White_Blood_Cell">
+          <direction dcol="-1"/>
+        </see>
+      </if>
+      <then>
+        <message selector="Die">
+          <direction/>
+        </message>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see shape="WHITE_BLOOD_CELL White_Blood_Cell">
+          <direction drow="1"/>
+        </see>
+      </if>
+      <then>
+        <message selector="Die">
+          <direction/>
+        </message>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see shape="WHITE_BLOOD_CELL White_Blood_Cell">
+          <direction dcol="1"/>
+        </see>
+      </if>
+      <then>
+        <message selector="Die">
+          <direction/>
+        </message>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see shape="WHITE_BLOOD_CELL White_Blood_Cell">
+          <direction drow="-1"/>
+        </see>
+      </if>
+      <then>
+        <message selector="Die">
+          <direction/>
+        </message>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see shape="DESTROYING White_Blood_Cell">
+          <direction drow="1"/>
+        </see>
+      </if>
+      <then/>
+    </rule>
+    <rule>
+      <if>
+        <see shape="DESTROYING White_Blood_Cell">
+          <direction dcol="1"/>
+        </see>
+      </if>
+      <then/>
+    </rule>
+    <rule>
+      <if>
+        <see shape="DESTROYING White_Blood_Cell">
+          <direction drow="-1"/>
+        </see>
+      </if>
+      <then/>
+    </rule>
+    <rule>
+      <if>
+        <see shape="DESTROYING White_Blood_Cell">
+          <direction dcol="-1"/>
+        </see>
+      </if>
+      <then/>
+    </rule>
+    <rule>
+      <if>
         <test expression1="Hunger" operator="&lt;=" expression2="0"/>
       </if>
       <then>
@@ -185,9 +265,6 @@
     </rule>
     <rule>
       <if>
-        <see shape="BACTERIA Bacteria">
-          <direction/>
-        </see>
         <see shape="UNTITLED Hand">
           <direction dcol="1"/>
         </see>
@@ -200,9 +277,6 @@
     </rule>
     <rule>
       <if>
-        <see shape="BACTERIA Bacteria">
-          <direction/>
-        </see>
         <see shape="UNTITLED Hand">
           <direction dcol="-1"/>
         </see>
@@ -215,9 +289,6 @@
     </rule>
     <rule>
       <if>
-        <see shape="BACTERIA Bacteria">
-          <direction/>
-        </see>
         <see shape="UNTITLED Hand">
           <direction drow="1"/>
         </see>
@@ -230,9 +301,6 @@
     </rule>
     <rule>
       <if>
-        <see shape="BACTERIA Bacteria">
-          <direction/>
-        </see>
         <see shape="UNTITLED Hand">
           <direction drow="-1"/>
         </see>
@@ -241,19 +309,6 @@
         <new shape="BACTERIA Bacteria">
           <direction drow="-1"/>
         </new>
-      </then>
-    </rule>
-    <rule>
-      <if>
-        <see shape="SUPER_MUTANT Bacteria">
-          <direction/>
-        </see>
-      </if>
-      <then>
-        <new shape="SUPER_MUTANT Bacteria">
-          <direction dcol="1"/>
-        </new>
-        <set attribute="@EPIDEMIC" value="@Epidemic + 1"/>
       </then>
     </rule>
   </method>
@@ -266,6 +321,7 @@
         <erase>
           <direction/>
         </erase>
+        <broadcast class-name="New_Bac_Creator" selector="Create_New_Controlbac"/>
       </then>
     </rule>
   </method>

@@ -62,54 +62,6 @@
     </rule>
     <rule>
       <if>
-        <see-a class-name="BACFOOD">
-          <direction dcol="-1"/>
-        </see-a>
-      </if>
-      <then>
-        <message selector="Die">
-          <direction dcol="-1"/>
-        </message>
-      </then>
-    </rule>
-    <rule>
-      <if>
-        <see-a class-name="BACFOOD">
-          <direction drow="1"/>
-        </see-a>
-      </if>
-      <then>
-        <message selector="Die">
-          <direction drow="1"/>
-        </message>
-      </then>
-    </rule>
-    <rule>
-      <if>
-        <see-a class-name="BACFOOD">
-          <direction dcol="1"/>
-        </see-a>
-      </if>
-      <then>
-        <message selector="Die">
-          <direction dcol="1"/>
-        </message>
-      </then>
-    </rule>
-    <rule>
-      <if>
-        <see-a class-name="BACFOOD">
-          <direction drow="-1"/>
-        </see-a>
-      </if>
-      <then>
-        <message selector="Die">
-          <direction drow="-1"/>
-        </message>
-      </then>
-    </rule>
-    <rule>
-      <if>
         <once-every seconds="0.1"/>
       </if>
       <then>

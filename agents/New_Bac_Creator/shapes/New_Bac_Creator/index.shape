@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<shape-manager name="NEW_BAC_CREATOR" relative-texture-path="Fun">
+  <sphere texture="Radioactive Gel.jpg"/>
+</shape-manager>

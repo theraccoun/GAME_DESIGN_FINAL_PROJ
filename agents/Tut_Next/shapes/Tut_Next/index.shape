@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<shape-manager name="TUT_NEXT" relative-texture-path="Fire">
+  <tile texture="Noxious Melt.jpg"/>
+</shape-manager>
