@@ -3,8 +3,46 @@
   <method disclosed="true">
     <while-running/>
     <rule>
-      <if/>
-      <then/>
+      <if>
+        <is-selected/>
+        <key label="C"/>
+        <see shape="UNTITLED Hand">
+          <direction drow="1"/>
+        </see>
+      </if>
+      <then>
+        <new shape="CONTROLBAC Controlbac">
+          <direction drow="1"/>
+        </new>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <is-selected/>
+        <key label="C"/>
+        <see shape="UNTITLED Hand">
+          <direction dcol="1"/>
+        </see>
+      </if>
+      <then>
+        <new shape="CONTROLBAC Controlbac">
+          <direction dcol="1"/>
+        </new>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <is-selected/>
+        <key label="C"/>
+        <see shape="UNTITLED Hand">
+          <direction drow="-1"/>
+        </see>
+      </if>
+      <then>
+        <new shape="CONTROLBAC Controlbac">
+          <direction drow="-1"/>
+        </new>
+      </then>
     </rule>
   </method>
   <method disclosed="true">

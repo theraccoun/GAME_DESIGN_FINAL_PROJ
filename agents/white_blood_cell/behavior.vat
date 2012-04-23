@@ -4,7 +4,8 @@
     <while-running/>
     <rule>
       <if>
-        <once-every seconds="20"/>
+        <once-every seconds="5"/>
+        <percent-chance expression="33"/>
       </if>
       <then>
         <message selector="Die">

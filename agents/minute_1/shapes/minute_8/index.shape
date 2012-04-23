@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<shape-manager name="MINUTE_8" relative-texture-path="Numbers">
+  <tile texture="8.png"/>
+</shape-manager>

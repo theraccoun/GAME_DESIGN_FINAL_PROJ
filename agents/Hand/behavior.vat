@@ -4,14 +4,12 @@
     <while-running/>
     <rule>
       <if>
-        <test expression1="@Sick" operator="&gt;" expression2="80"/>
-        <test expression1="@Getting_Sick" operator="!=" expression2="1"/>
+        <test expression1="@Epidemic" operator="&gt;=" expression2="80"/>
       </if>
       <then>
         <stop-simulation/>
-        <show-message disclosed="true" text="You are starting to get sick!" subtext="Cough cough!"/>
+        <show-message disclosed="true" text="Be careful, an epidemic might break out soon!" subtext=""/>
         <run-simulation/>
-        <set attribute="@GETTING_SICK" value="1"/>
       </then>
     </rule>
     <rule>
@@ -20,18 +18,10 @@
       </if>
       <then>
         <stop-simulation/>
-        <show-message text="You Started an Epidemic. You&#39;ve killed EVERYONE. Don&#39;t use so much soap next time!" subtext="The spaceship is ready to go"/>
-        <run-simulation/>
-      </then>
-    </rule>
-    <rule>
-      <if>
-        <test expression1="@Sick" operator="&gt;" expression2="150"/>
-      </if>
-      <then>
-        <stop-simulation/>
-        <show-message text="You Died!" subtext="The spaceship is ready to go"/>
+        <show-message disclosed="true" text="You Started an Epidemic.  NOooooooooooooooooooooooooooooo" subtext=""/>
+        <finish-animations/>
         <reload-world/>
+        <run-simulation/>
       </then>
     </rule>
     <rule>

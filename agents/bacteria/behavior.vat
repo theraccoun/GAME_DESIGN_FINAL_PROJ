@@ -4,6 +4,20 @@
     <while-running/>
     <rule>
       <if>
+        <is-selected/>
+        <key label="C"/>
+      </if>
+      <then>
+        <new shape="CONTROLBAC Controlbac">
+          <direction drow="1"/>
+        </new>
+        <message selector="Die">
+          <direction/>
+        </message>
+      </then>
+    </rule>
+    <rule>
+      <if>
         <test expression1="Is_Being_Consumed" expression2="1"/>
         <see shape="WHITE_BLOOD_CELL White_Blood_Cell">
           <direction dcol="-1"/>

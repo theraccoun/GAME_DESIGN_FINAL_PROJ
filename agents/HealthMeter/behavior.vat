@@ -36,7 +36,7 @@
         </see>
       </if>
       <then>
-        <move disclosed="true" animation="constant" duration="0.1">
+        <move disclosed="true" animation="constant" duration="0.05">
           <direction drow="1"/>
         </move>
         <new shape="HEALTH Health">
@@ -54,6 +54,7 @@
       <then>
         <broadcast class-name="Bacteria" selector="Die"/>
         <broadcast class-name="White_Blood_Cell" selector="Die"/>
+        <broadcast class-name="Controlbac" selector="Die"/>
         <set attribute="@SICK" value="0"/>
         <set attribute="@MOD_SICK" value="0"/>
         <set attribute="@EPIDEMIC" value="0"/>

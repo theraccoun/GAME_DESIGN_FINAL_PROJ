@@ -8,6 +8,15 @@
         <key label="N"/>
       </if>
       <then>
+        <switch-to-world world="Tut_Soap"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <current-world world="Tut_Soap"/>
+        <key label="N"/>
+      </if>
+      <then>
         <switch-to-world world="play"/>
       </then>
     </rule>

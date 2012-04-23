@@ -1,4 +1,4 @@
 <?xml version="1.0"?>
-<shape-manager name="HEALTH" relative-texture-path="Fire">
-  <tile texture="Mt Etna.jpg"/>
+<shape-manager name="HEALTH" relative-texture-path="Fun">
+  <tile texture="Radioactive Gel.jpg"/>
 </shape-manager>

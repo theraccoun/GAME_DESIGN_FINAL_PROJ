@@ -4,12 +4,29 @@
     <while-running/>
     <rule>
       <if>
-        <once-every seconds="10"/>
-        <percent-chance expression="5"/>
+        <once-every seconds="8"/>
+        <percent-chance expression="20"/>
+        <see shape="UNTITLED Hand">
+          <direction dcol="-1"/>
+        </see>
       </if>
       <then>
         <new shape="WHITE_BLOOD_CELL White_Blood_Cell">
           <direction dcol="-1"/>
+        </new>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <once-every seconds="5"/>
+        <percent-chance expression="8"/>
+        <see shape="UNTITLED Hand">
+          <direction dcol="1"/>
+        </see>
+      </if>
+      <then>
+        <new shape="WHITE_BLOOD_CELL White_Blood_Cell">
+          <direction dcol="1"/>
         </new>
       </then>
     </rule>

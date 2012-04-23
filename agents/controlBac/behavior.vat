@@ -4,6 +4,15 @@
     <while-running/>
     <rule>
       <if>
+        <key label="Z"/>
+        <is-selected/>
+      </if>
+      <then>
+        <switch-to-first-person-camera/>
+      </then>
+    </rule>
+    <rule>
+      <if>
         <see shape="WHITE_BLOOD_CELL White_Blood_Cell">
           <direction dcol="-1"/>
         </see>
@@ -125,6 +134,7 @@
         <see shape="UNTITLED Hand">
           <direction dcol="-1"/>
         </see>
+        <is-selected/>
       </if>
       <then>
         <move>
@@ -138,6 +148,7 @@
         <see shape="UNTITLED Hand">
           <direction dcol="1"/>
         </see>
+        <is-selected/>
       </if>
       <then>
         <move>
@@ -151,6 +162,7 @@
         <see shape="UNTITLED Hand">
           <direction drow="1"/>
         </see>
+        <is-selected/>
       </if>
       <then>
         <move>
@@ -164,6 +176,7 @@
         <see shape="UNTITLED Hand">
           <direction drow="-1"/>
         </see>
+        <is-selected/>
       </if>
       <then>
         <move>
@@ -177,6 +190,7 @@
           <direction dcol="-1"/>
         </see>
         <key label="E"/>
+        <is-selected/>
       </if>
       <then>
         <message selector="Set_Being_Eaten">
@@ -191,6 +205,7 @@
           <direction dcol="1"/>
         </see>
         <key label="E"/>
+        <is-selected/>
       </if>
       <then>
         <message selector="Set_Being_Eaten">
@@ -205,6 +220,7 @@
           <direction drow="1"/>
         </see>
         <key label="E"/>
+        <is-selected/>
       </if>
       <then>
         <message selector="Set_Being_Eaten">
@@ -219,6 +235,7 @@
           <direction drow="-1"/>
         </see>
         <key label="E"/>
+        <is-selected/>
       </if>
       <then>
         <message selector="Set_Being_Eaten">
@@ -322,6 +339,7 @@
           <direction/>
         </erase>
         <broadcast class-name="New_Bac_Creator" selector="Create_New_Controlbac"/>
+        <switch-to-birds-eye-camera/>
       </then>
     </rule>
   </method>
