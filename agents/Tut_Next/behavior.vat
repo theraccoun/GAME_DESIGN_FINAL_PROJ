@@ -14,10 +14,65 @@
     <rule>
       <if>
         <current-world world="Level_1"/>
-        <key label="N"/>
+        <key label="right arrow"/>
       </if>
       <then>
-        <switch-to-world world="Tut_Soap"/>
+        <switch-to-world world="Level1_Commands"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <current-world world="Level1_Commands"/>
+        <key label="left arrow"/>
+      </if>
+      <then>
+        <switch-to-world world="Level_1"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <current-world world="Level1_Commands"/>
+        <key label="right arrow"/>
+      </if>
+      <then>
+        <switch-to-world world="Food_Rule"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <current-world world="Food_Rule"/>
+        <key label="right arrow"/>
+      </if>
+      <then>
+        <switch-to-world world="Watch_White_Blood_Cells"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <current-world world="Food_Rule"/>
+        <key label="left arrow"/>
+      </if>
+      <then>
+        <switch-to-world world="Level1_Commands"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <current-world world="Watch_White_Blood_Cells"/>
+        <key label="left arrow"/>
+      </if>
+      <then>
+        <switch-to-world world="Food_Rule"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <current-world world="Watch_White_Blood_Cells"/>
+        <key label="right arrow"/>
+      </if>
+      <then>
+        <set attribute="@IS_LEVEL1_RUNNING" value="99"/>
+        <switch-to-world world="play"/>
       </then>
     </rule>
     <rule>

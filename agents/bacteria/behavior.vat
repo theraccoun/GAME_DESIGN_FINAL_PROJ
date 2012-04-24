@@ -4,17 +4,9 @@
     <while-running/>
     <rule>
       <if>
-        <is-selected/>
-        <key label="C"/>
+        <current-world negated="true" world="play"/>
       </if>
-      <then>
-        <new shape="CONTROLBAC Controlbac">
-          <direction drow="1"/>
-        </new>
-        <message selector="Die">
-          <direction/>
-        </message>
-      </then>
+      <then/>
     </rule>
     <rule>
       <if>

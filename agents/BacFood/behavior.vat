@@ -76,6 +76,16 @@
   <method disclosed="true">
     <on selector="Set_Done_Being_Eaten"/>
     <rule>
+      <if>
+        <percent-chance expression="40"/>
+      </if>
+      <then>
+        <erase>
+          <direction/>
+        </erase>
+      </then>
+    </rule>
+    <rule>
       <if/>
       <then>
         <set attribute="IS_BEING_EATEN" value="0"/>

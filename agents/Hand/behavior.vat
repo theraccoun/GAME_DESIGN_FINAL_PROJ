@@ -4,6 +4,23 @@
     <while-running/>
     <rule>
       <if>
+        <current-world negated="true" world="play"/>
+      </if>
+      <then/>
+    </rule>
+    <rule>
+      <if>
+        <once-every seconds="8"/>
+        <percent-chance expression="0.2"/>
+      </if>
+      <then>
+        <new shape="BACFOOD Bacfood">
+          <direction/>
+        </new>
+      </then>
+    </rule>
+    <rule>
+      <if>
         <test expression1="@Epidemic" operator="&gt;=" expression2="80"/>
       </if>
       <then>

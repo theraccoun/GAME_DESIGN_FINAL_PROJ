@@ -4,6 +4,12 @@
     <while-running/>
     <rule>
       <if>
+        <current-world negated="true" world="play"/>
+      </if>
+      <then/>
+    </rule>
+    <rule>
+      <if>
         <key label="Z"/>
         <is-selected/>
       </if>
@@ -61,42 +67,21 @@
     </rule>
     <rule>
       <if>
-        <see shape="DESTROYING White_Blood_Cell">
-          <direction drow="1"/>
-        </see>
-      </if>
-      <then/>
-    </rule>
-    <rule>
-      <if>
-        <see shape="DESTROYING White_Blood_Cell">
-          <direction dcol="1"/>
-        </see>
-      </if>
-      <then/>
-    </rule>
-    <rule>
-      <if>
-        <see shape="DESTROYING White_Blood_Cell">
-          <direction drow="-1"/>
-        </see>
-      </if>
-      <then/>
-    </rule>
-    <rule>
-      <if>
-        <see shape="DESTROYING White_Blood_Cell">
-          <direction dcol="-1"/>
-        </see>
-      </if>
-      <then/>
-    </rule>
-    <rule>
-      <if>
         <test expression1="Hunger" operator="&lt;=" expression2="0"/>
       </if>
       <then>
         <message selector="Die">
+          <direction/>
+        </message>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <percent-chance expression="35"/>
+        <once-every seconds="5"/>
+      </if>
+      <then>
+        <message selector="Reproduce">
           <direction/>
         </message>
       </then>
@@ -109,7 +94,7 @@
         <set attribute="HUNGER" value="Hunger+10"/>
         <set attribute="EAT_TIMER" value="0"/>
         <set attribute="IS_EATING" value="0"/>
-        <move-random distance="2"/>
+        <move-random distance="3"/>
       </then>
     </rule>
     <rule>
@@ -124,17 +109,13 @@
     <rule>
       <if>
         <test expression1="Is_Eating" expression2="1"/>
-        <test expression1="Eat_Timer" operator="&lt;" expression2="5"/>
+        <test expression1="Eat_Timer" operator="&lt;" expression2="2"/>
       </if>
       <then/>
     </rule>
     <rule>
       <if>
         <key label="left arrow"/>
-        <see shape="UNTITLED Hand">
-          <direction dcol="-1"/>
-        </see>
-        <is-selected/>
       </if>
       <then>
         <move>
@@ -145,10 +126,6 @@
     <rule>
       <if>
         <key label="right arrow"/>
-        <see shape="UNTITLED Hand">
-          <direction dcol="1"/>
-        </see>
-        <is-selected/>
       </if>
       <then>
         <move>
@@ -159,10 +136,6 @@
     <rule>
       <if>
         <key label="up arrow"/>
-        <see shape="UNTITLED Hand">
-          <direction drow="1"/>
-        </see>
-        <is-selected/>
       </if>
       <then>
         <move>
@@ -173,10 +146,6 @@
     <rule>
       <if>
         <key label="down arrow"/>
-        <see shape="UNTITLED Hand">
-          <direction drow="-1"/>
-        </see>
-        <is-selected/>
       </if>
       <then>
         <move>
@@ -190,7 +159,6 @@
           <direction dcol="-1"/>
         </see>
         <key label="E"/>
-        <is-selected/>
       </if>
       <then>
         <message selector="Set_Being_Eaten">
@@ -205,7 +173,6 @@
           <direction dcol="1"/>
         </see>
         <key label="E"/>
-        <is-selected/>
       </if>
       <then>
         <message selector="Set_Being_Eaten">
@@ -220,7 +187,6 @@
           <direction drow="1"/>
         </see>
         <key label="E"/>
-        <is-selected/>
       </if>
       <then>
         <message selector="Set_Being_Eaten">
@@ -235,7 +201,6 @@
           <direction drow="-1"/>
         </see>
         <key label="E"/>
-        <is-selected/>
       </if>
       <then>
         <message selector="Set_Being_Eaten">
@@ -334,12 +299,10 @@
     <rule>
       <if/>
       <then>
-        <set attribute="@SICK" value="@Sick - 1"/>
-        <erase>
-          <direction/>
-        </erase>
-        <broadcast class-name="New_Bac_Creator" selector="Create_New_Controlbac"/>
-        <switch-to-birds-eye-camera/>
+        <stop-simulation/>
+        <play-sound ref="Explode.mp3"/>
+        <show-message text="Oh no, you died! Hit &#39;r&#39; to reset and try again" subtext="The spaceship is ready to go"/>
+        <reload-world/>
       </then>
     </rule>
   </method>

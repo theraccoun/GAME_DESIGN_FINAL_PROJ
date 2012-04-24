@@ -4,6 +4,12 @@
     <while-running/>
     <rule>
       <if>
+        <current-world negated="true" world="play"/>
+      </if>
+      <then/>
+    </rule>
+    <rule>
+      <if>
         <once-every seconds="8"/>
         <percent-chance expression="20"/>
         <see shape="UNTITLED Hand">

@@ -1,4 +1,4 @@
 <?xml version="1.0"?>
 <shape-manager name="CLOCK" relative-texture-path="Futuristic">
-  <sphere texture="Alien Alloy 3.jpg"/>
+  <tile texture="Alien Alloy 3.jpg"/>
 </shape-manager>

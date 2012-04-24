@@ -4,6 +4,32 @@
     <while-running/>
     <rule>
       <if>
+        <current-world negated="true" world="play"/>
+      </if>
+      <then/>
+    </rule>
+    <rule>
+      <if>
+        <key label="R"/>
+      </if>
+      <then>
+        <message selector="Reset_World">
+          <direction/>
+        </message>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <key label="C"/>
+      </if>
+      <then>
+        <message selector="Reset_Clock">
+          <direction/>
+        </message>
+      </then>
+    </rule>
+    <rule>
+      <if>
         <once-every seconds="1"/>
       </if>
       <then>
@@ -18,6 +44,25 @@
     <rule>
       <if/>
       <then>
+        <broadcast class-name="Bacteria" selector="Die"/>
+        <broadcast class-name="White_Blood_Cell" selector="Die"/>
+        <broadcast class-name="Controlbac" selector="Die"/>
+        <set attribute="@SICK" value="0"/>
+        <set attribute="@MOD_SICK" value="0"/>
+        <set attribute="@EPIDEMIC" value="0"/>
+        <set attribute="IS_RESETING" value="1"/>
+        <message selector="Reset_Clock">
+          <direction dcol="-1"/>
+        </message>
+      </then>
+    </rule>
+  </method>
+  <method disclosed="true">
+    <on selector="Reset_World"/>
+    <rule>
+      <if/>
+      <then>
+        <reload-world/>
         <message selector="Reset_Clock">
           <direction dcol="-1"/>
         </message>

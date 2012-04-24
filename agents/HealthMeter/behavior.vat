@@ -49,21 +49,6 @@
     <while-running/>
     <rule>
       <if>
-        <key label="R"/>
-      </if>
-      <then>
-        <broadcast class-name="Bacteria" selector="Die"/>
-        <broadcast class-name="White_Blood_Cell" selector="Die"/>
-        <broadcast class-name="Controlbac" selector="Die"/>
-        <set attribute="@SICK" value="0"/>
-        <set attribute="@MOD_SICK" value="0"/>
-        <set attribute="@EPIDEMIC" value="0"/>
-        <set attribute="IS_RESETING" value="1"/>
-        <broadcast class-name="Clock" selector="Reset_Clock"/>
-      </then>
-    </rule>
-    <rule>
-      <if>
         <test expression1="Is_Reseting" expression2="1"/>
         <see shape="SCOREBOARD Scoreboard">
           <direction drow="1"/>

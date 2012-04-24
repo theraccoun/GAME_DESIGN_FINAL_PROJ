@@ -277,6 +277,12 @@
   <method disclosed="true">
     <while-running/>
     <rule>
+      <if>
+        <current-world negated="true" world="play"/>
+      </if>
+      <then/>
+    </rule>
+    <rule>
       <if/>
       <then>
         <message selector="Set_Sick_Meter">

@@ -127,7 +127,7 @@
       </if>
       <then>
         <stop-simulation/>
-        <show-message disclosed="true" text="You are out of time!" subtext=""/>
+        <show-message disclosed="true" text="Congratulations, your bacteria survived!" subtext=""/>
       </then>
     </rule>
   </method>
@@ -140,12 +140,12 @@
         </see-a>
       </if>
       <then>
-        <change shape="MINUTE_9 Minute_1">
-          <direction/>
-        </change>
         <message selector="Reset_Clock">
           <direction dcol="-1"/>
         </message>
+        <change shape="MINUTE_9 Minute_1">
+          <direction/>
+        </change>
       </then>
     </rule>
     <rule>
