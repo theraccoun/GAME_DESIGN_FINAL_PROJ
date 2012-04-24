@@ -59,6 +59,7 @@
         <set attribute="@MOD_SICK" value="0"/>
         <set attribute="@EPIDEMIC" value="0"/>
         <set attribute="IS_RESETING" value="1"/>
+        <broadcast class-name="Clock" selector="Reset_Clock"/>
       </then>
     </rule>
     <rule>

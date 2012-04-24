@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<behavior comments="I am user controlled">
+  <method disclosed="true">
+    <while-running/>
+    <rule>
+      <if>
+        <once-every seconds="1"/>
+      </if>
+      <then>
+        <message selector="Subtract_Second">
+          <direction dcol="-1"/>
+        </message>
+      </then>
+    </rule>
+  </method>
+  <method disclosed="true">
+    <on selector="Reset_Clock"/>
+    <rule>
+      <if/>
+      <then>
+        <message selector="Reset_Clock">
+          <direction dcol="-1"/>
+        </message>
+      </then>
+    </rule>
+  </method>
+</behavior>

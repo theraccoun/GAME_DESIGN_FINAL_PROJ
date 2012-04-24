@@ -1,10 +1,160 @@
 <?xml version="1.0"?>
 <behavior comments="I am user controlled">
   <method disclosed="true">
-    <while-running/>
+    <on selector="Subtract_Second"/>
+    <rule>
+      <if>
+        <see shape="MINUTE_9 Minute_1">
+          <direction/>
+        </see>
+      </if>
+      <then>
+        <change shape="MINUTE_8 Minute_1">
+          <direction/>
+        </change>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see shape="MINUTE_8 Minute_1">
+          <direction/>
+        </see>
+      </if>
+      <then>
+        <change shape="MINUTE_7 Minute_1">
+          <direction/>
+        </change>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see shape="MINUTE_7 Minute_1">
+          <direction/>
+        </see>
+      </if>
+      <then>
+        <change shape="MINUTE_6 Minute_1">
+          <direction/>
+        </change>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see shape="MINUTE_6 Minute_1">
+          <direction/>
+        </see>
+      </if>
+      <then>
+        <change shape="MINUTE_5 Minute_1">
+          <direction/>
+        </change>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see shape="MINUTE_5 Minute_1">
+          <direction/>
+        </see>
+      </if>
+      <then>
+        <change shape="MINUTE_4 Minute_1">
+          <direction/>
+        </change>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see shape="MINUTE_4 Minute_1">
+          <direction/>
+        </see>
+      </if>
+      <then>
+        <change shape="MINUTE_3 Minute_1">
+          <direction/>
+        </change>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see shape="MINUTE_3 Minute_1">
+          <direction/>
+        </see>
+      </if>
+      <then>
+        <change shape="MINUTE_2 Minute_1">
+          <direction/>
+        </change>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see shape="MINUTE_2 Minute_1">
+          <direction/>
+        </see>
+      </if>
+      <then>
+        <change shape="MINUTE_1 Minute_1">
+          <direction/>
+        </change>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see shape="MINUTE_1 Minute_1">
+          <direction/>
+        </see>
+        <see-a class-name="Minute_1">
+          <direction dcol="-1"/>
+        </see-a>
+      </if>
+      <then>
+        <message selector="Subtract_Second">
+          <direction dcol="-1"/>
+        </message>
+        <change shape="MINUTE_9 Minute_1">
+          <direction/>
+        </change>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see shape="MINUTE_1 Minute_1">
+          <direction/>
+        </see>
+        <see-a negated="true" class-name="Minute_1">
+          <direction dcol="-1"/>
+        </see-a>
+      </if>
+      <then>
+        <stop-simulation/>
+        <show-message disclosed="true" text="You are out of time!" subtext=""/>
+      </then>
+    </rule>
+  </method>
+  <method disclosed="true">
+    <on selector="Reset_Clock"/>
+    <rule>
+      <if>
+        <see-a class-name="Minute_1">
+          <direction dcol="-1"/>
+        </see-a>
+      </if>
+      <then>
+        <change shape="MINUTE_9 Minute_1">
+          <direction/>
+        </change>
+        <message selector="Reset_Clock">
+          <direction dcol="-1"/>
+        </message>
+      </then>
+    </rule>
     <rule>
       <if/>
-      <then/>
+      <then>
+        <change shape="MINUTE_9 Minute_1">
+          <direction/>
+        </change>
+      </then>
     </rule>
   </method>
 </behavior>

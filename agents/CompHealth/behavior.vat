@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <behavior comments="I am user controlled">
-  <method disclosed="true">
-    <while-running/>
+  <method>
+    <on selector="Set_Sick_Meter"/>
     <rule>
       <if>
         <test expression1="@Sick" operator="&gt;=" expression2="10"/>
@@ -272,6 +272,24 @@
         <finish-animations/>
         <reload-world/>
       </then>
+    </rule>
+  </method>
+  <method disclosed="true">
+    <while-running/>
+    <rule>
+      <if/>
+      <then>
+        <message selector="Set_Sick_Meter">
+          <direction/>
+        </message>
+      </then>
+    </rule>
+  </method>
+  <method disclosed="true">
+    <on selector="Set_Play_Meter"/>
+    <rule>
+      <if/>
+      <then/>
     </rule>
   </method>
 </behavior>
