@@ -128,6 +128,7 @@
       <then>
         <stop-simulation/>
         <show-message disclosed="true" text="Congratulations, your bacteria survived!" subtext=""/>
+        <switch-to-world world="level2_slide"/>
       </then>
     </rule>
   </method>

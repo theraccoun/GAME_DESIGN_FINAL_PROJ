@@ -10,8 +10,8 @@
     </rule>
     <rule>
       <if>
-        <once-every seconds="8"/>
-        <percent-chance expression="0.2"/>
+        <once-every seconds="6"/>
+        <percent-chance expression="0.4"/>
       </if>
       <then>
         <new shape="BACFOOD Bacfood">
@@ -22,6 +22,7 @@
     <rule>
       <if>
         <test expression1="@Epidemic" operator="&gt;=" expression2="80"/>
+        <current-world world="epidemic"/>
       </if>
       <then>
         <stop-simulation/>
@@ -32,6 +33,7 @@
     <rule>
       <if>
         <test expression1="@Epidemic" operator="&gt;=" expression2="120"/>
+        <current-world world="epidemic"/>
       </if>
       <then>
         <stop-simulation/>

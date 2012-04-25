@@ -77,20 +77,47 @@
     </rule>
     <rule>
       <if>
-        <current-world world="Tut_Soap"/>
-        <key label="N"/>
+        <current-world world="level2_slide"/>
+        <key label="right arrow"/>
       </if>
       <then>
-        <switch-to-world world="play"/>
+        <switch-to-world world="soap_rules"/>
       </then>
     </rule>
     <rule>
       <if>
-        <current-world world="play"/>
-        <key label="P"/>
+        <current-world world="soap_rules"/>
+        <key label="left arrow"/>
       </if>
       <then>
-        <switch-to-world world="Tut_BacMove"/>
+        <switch-to-world world="level2_slide"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <current-world world="soap_rules"/>
+        <key label="right arrow"/>
+      </if>
+      <then>
+        <switch-to-world world="l2_tut_new_bac"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <current-world world="l2_tut_new_bac"/>
+        <key label="right arrow"/>
+      </if>
+      <then>
+        <switch-to-world world="epidemic"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <current-world world="l2_tut_new_bac"/>
+        <key label="left arrow"/>
+      </if>
+      <then>
+        <switch-to-world world="soap_rules"/>
       </then>
     </rule>
   </method>

@@ -15,12 +15,6 @@
     <health_agent col="2" shape-name="HEALTH" x-turn="0.5" y-turn="0.5"/>
     <scoreboard_agent col="3" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
     <scoreboard_agent col="4" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
-    <scoreboard_agent col="5" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
-    <funmeter_agent col="5" shape-name="FUNMETER" x-turn="0.5" y-turn="0.5"/>
-    <scoreboard_agent col="6" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
-    <funmeter_agent col="6" shape-name="FUNMETER" x-turn="0.5" y-turn="0.5"/>
-    <scoreboard_agent col="7" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
-    <scoreboard_agent col="8" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
     <minute_1_agent col="11" shape-name="MINUTE_9" x-turn="0.5" y-turn="0.5"/>
     <minute_1_agent col="12" shape-name="MINUTE_9" x-turn="0.5" y-turn="0.5"/>
     <clock_agent col="13" shape-name="CLOCK" attributes="(IS_RESETING 1)" x-turn="0.5" y-turn="0.5"/>
@@ -42,10 +36,6 @@
     <health_agent row="1" col="2" shape-name="HEALTH" x-turn="0.5" y-turn="0.5"/>
     <scoreboard_agent row="1" col="3" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
     <scoreboard_agent row="1" col="4" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
-    <scoreboard_agent row="1" col="5" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
-    <scoreboard_agent row="1" col="6" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
-    <scoreboard_agent row="1" col="7" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
-    <scoreboard_agent row="1" col="8" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
     <hand_agent row="1" col="17" shape-name="UNTITLED" attributes="(B 0.39090288 D 0.4232264)" x-turn="0.5" y-turn="0.5"/>
     <hand_agent row="1" col="18" shape-name="UNTITLED" attributes="(B 0.651554 D 0.7152208)" x-turn="0.5" y-turn="0.5"/>
     <hand_agent row="1" col="19" shape-name="UNTITLED" attributes="(B 0.8156519 D 1.0128701)" x-turn="0.5" y-turn="0.5"/>
@@ -63,10 +53,6 @@
     <health_agent row="2" col="2" shape-name="HEALTH" x-turn="0.5" y-turn="0.5"/>
     <scoreboard_agent row="2" col="3" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
     <scoreboard_agent row="2" col="4" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
-    <scoreboard_agent row="2" col="5" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
-    <scoreboard_agent row="2" col="6" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
-    <scoreboard_agent row="2" col="7" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
-    <scoreboard_agent row="2" col="8" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
     <hand_agent row="2" col="16" shape-name="UNTITLED" attributes="(B 0.3350428 D 0.4042389)" x-turn="0.5" y-turn="0.5"/>
     <hand_agent row="2" col="17" shape-name="UNTITLED" attributes="(B 0.73268986 D 0.7807615)" x-turn="0.5" y-turn="0.5"/>
     <hand_agent row="2" col="18" shape-name="UNTITLED" attributes="(B 1.0536115 D 1.0678806)" x-turn="0.5" y-turn="0.5"/>
@@ -85,10 +71,6 @@
     <health_agent row="3" col="2" shape-name="HEALTH" x-turn="0.5" y-turn="0.5"/>
     <scoreboard_agent row="3" col="3" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
     <scoreboard_agent row="3" col="4" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
-    <scoreboard_agent row="3" col="5" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
-    <scoreboard_agent row="3" col="6" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
-    <scoreboard_agent row="3" col="7" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
-    <scoreboard_agent row="3" col="8" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
     <hand_agent row="3" col="16" shape-name="UNTITLED" attributes="(B 0.60748136 D 0.83619416)" x-turn="0.5" y-turn="0.5"/>
     <hand_agent row="3" col="17" shape-name="UNTITLED" attributes="(B 1.0992732 D 1.2442985)" x-turn="0.5" y-turn="0.5"/>
     <hand_agent row="3" col="18" shape-name="UNTITLED" attributes="(B 1.5160086 D 1.4530785)" x-turn="0.5" y-turn="0.5"/>
@@ -107,10 +89,6 @@
     <health_agent row="4" col="2" shape-name="HEALTH" x-turn="0.5" y-turn="0.5"/>
     <scoreboard_agent row="4" col="3" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
     <scoreboard_agent row="4" col="4" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
-    <scoreboard_agent row="4" col="5" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
-    <scoreboard_agent row="4" col="6" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
-    <scoreboard_agent row="4" col="7" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
-    <scoreboard_agent row="4" col="8" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
     <hand_agent row="4" col="14" shape-name="UNTITLED" attributes="(B 0.23176992 D 0.582126)" x-turn="0.5" y-turn="0.5"/>
     <hand_agent row="4" col="15" shape-name="UNTITLED" attributes="(B 0.49974358 D 1.1212186)" x-turn="0.5" y-turn="0.5"/>
     <hand_agent row="4" col="16" shape-name="UNTITLED" attributes="(B 0.976668 D 1.7006333)" x-turn="0.5" y-turn="0.5"/>
@@ -131,10 +109,6 @@
     <health_agent row="5" col="2" shape-name="HEALTH" x-turn="0.5" y-turn="0.5"/>
     <scoreboard_agent row="5" col="3" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
     <scoreboard_agent row="5" col="4" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
-    <scoreboard_agent row="5" col="5" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
-    <scoreboard_agent row="5" col="6" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
-    <scoreboard_agent row="5" col="7" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
-    <scoreboard_agent row="5" col="8" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
     <hand_agent row="5" col="14" shape-name="UNTITLED" attributes="(B 0.43097076 D 1.2031474)" x-turn="0.5" y-turn="0.5"/>
     <hand_agent row="5" col="15" shape-name="UNTITLED" attributes="(B 0.7905364 D 2.202115)" x-turn="0.5" y-turn="0.5"/>
     <hand_agent row="5" col="16" shape-name="UNTITLED" attributes="(B 1.2556754 D 2.9348722)" x-turn="0.5" y-turn="0.5"/>
@@ -155,10 +129,6 @@
     <health_agent row="6" col="2" shape-name="HEALTH" x-turn="0.5" y-turn="0.5"/>
     <scoreboard_agent row="6" col="3" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
     <scoreboard_agent row="6" col="4" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
-    <scoreboard_agent row="6" col="5" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
-    <scoreboard_agent row="6" col="6" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
-    <scoreboard_agent row="6" col="7" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
-    <scoreboard_agent row="6" col="8" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
     <hand_agent row="6" col="13" shape-name="UNTITLED" attributes="(B 0.33183977 D 0.7800794)" x-turn="0.5" y-turn="0.5"/>
     <hand_agent row="6" col="14" shape-name="UNTITLED" attributes="(B 0.7143446 D 2.0170813)" x-turn="0.5" y-turn="0.5"/>
     <hand_agent row="6" col="15" shape-name="UNTITLED" attributes="(B 0.97939044 D 3.5450845)" x-turn="0.5" y-turn="0.5"/>
@@ -182,10 +152,6 @@
     <health_agent row="7" col="2" shape-name="HEALTH" x-turn="0.5" y-turn="0.5"/>
     <scoreboard_agent row="7" col="3" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
     <scoreboard_agent row="7" col="4" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
-    <scoreboard_agent row="7" col="5" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
-    <scoreboard_agent row="7" col="6" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
-    <scoreboard_agent row="7" col="7" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
-    <scoreboard_agent row="7" col="8" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
     <hand_agent row="7" col="13" shape-name="UNTITLED" attributes="(B 0.61885893 D 1.0980942)" x-turn="0.5" y-turn="0.5"/>
     <hand_agent row="7" col="14" shape-name="UNTITLED" attributes="(B 1.1168408 D 2.5380833)" x-turn="0.5" y-turn="0.5"/>
     <hand_agent row="7" col="15" shape-name="UNTITLED" attributes="(B 1.2346668 D 4.857006)" x-turn="0.5" y-turn="0.5"/>
@@ -210,10 +176,6 @@
     <healthmeter_agent row="8" col="2" shape-name="METER" attributes="(IS_RESETING 0)" x-turn="0.5" y-turn="0.5"/>
     <scoreboard_agent row="8" col="3" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
     <scoreboard_agent row="8" col="4" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
-    <scoreboard_agent row="8" col="5" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
-    <scoreboard_agent row="8" col="6" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
-    <scoreboard_agent row="8" col="7" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
-    <scoreboard_agent row="8" col="8" shape-name="SCOREBOARD" x-turn="0.5" y-turn="0.5"/>
     <hand_agent row="8" col="13" shape-name="UNTITLED" attributes="(B 1.0267781 D 1.0742755)" x-turn="0.5" y-turn="0.5"/>
     <hand_agent row="8" col="14" shape-name="UNTITLED" attributes="(B 1.904249 D 2.1754353)" x-turn="0.5" y-turn="0.5"/>
     <hand_agent row="8" col="15" shape-name="UNTITLED" attributes="(B 2.8669705 D 3.323532)" x-turn="0.5" y-turn="0.5"/>
