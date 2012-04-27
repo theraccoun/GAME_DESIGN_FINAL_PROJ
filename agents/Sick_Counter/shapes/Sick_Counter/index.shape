@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<shape-manager name="SICK_COUNTER" relative-texture-path="Numbers">
+  <tile texture="7.png"/>
+</shape-manager>

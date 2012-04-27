@@ -5,14 +5,19 @@
     <rule>
       <if>
         <current-world negated="true" world="play"/>
+        <test expression1="@World_Epidemic" operator="!=" expression2="1"/>
       </if>
-      <then/>
+      <then>
+        <message selector="Check_Current_World">
+          <direction/>
+        </message>
+      </then>
     </rule>
     <rule>
       <if>
         <once-every seconds="8"/>
         <percent-chance expression="20"/>
-        <see shape="UNTITLED Hand">
+        <see shape="HEALTHY HAND">
           <direction dcol="-1"/>
         </see>
       </if>
@@ -26,7 +31,7 @@
       <if>
         <once-every seconds="5"/>
         <percent-chance expression="8"/>
-        <see shape="UNTITLED Hand">
+        <see shape="HEALTHY HAND">
           <direction dcol="1"/>
         </see>
       </if>
@@ -34,6 +39,17 @@
         <new shape="WHITE_BLOOD_CELL White_Blood_Cell">
           <direction dcol="1"/>
         </new>
+      </then>
+    </rule>
+  </method>
+  <method disclosed="true">
+    <on selector="Check_Current_World"/>
+    <rule>
+      <if>
+        <current-world world="epidemic"/>
+      </if>
+      <then>
+        <set attribute="@WORLD_EPIDEMIC" value="1"/>
       </then>
     </rule>
   </method>

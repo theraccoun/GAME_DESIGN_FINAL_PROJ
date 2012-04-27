@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<shape-manager name="FLAG_HOLDER" relative-texture-path="Marble">
+  <tile texture="Glassy Pink Marble.jpg"/>
+</shape-manager>

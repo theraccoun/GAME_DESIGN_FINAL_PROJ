@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<shape-manager name="CONTROLLER" relative-texture-path="Marble">
+  <tile texture="Blue Crack Marble.jpg"/>
+</shape-manager>

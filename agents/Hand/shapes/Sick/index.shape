@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<shape-manager name="SICK" relative-texture-path="Tiling">
+  <tile texture="Disco Tile blue.png"/>
+</shape-manager>

@@ -6,7 +6,7 @@
       <if>
         <is-selected/>
         <key label="C"/>
-        <see shape="UNTITLED Hand">
+        <see shape="HEALTHY HAND">
           <direction drow="1"/>
         </see>
       </if>
@@ -20,7 +20,7 @@
       <if>
         <is-selected/>
         <key label="C"/>
-        <see shape="UNTITLED Hand">
+        <see shape="HEALTHY HAND">
           <direction dcol="1"/>
         </see>
       </if>
@@ -34,7 +34,7 @@
       <if>
         <is-selected/>
         <key label="C"/>
-        <see shape="UNTITLED Hand">
+        <see shape="HEALTHY HAND">
           <direction drow="-1"/>
         </see>
       </if>

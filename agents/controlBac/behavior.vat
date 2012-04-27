@@ -247,7 +247,7 @@
     </rule>
     <rule>
       <if>
-        <see shape="UNTITLED Hand">
+        <see shape="HEALTHY HAND">
           <direction dcol="1"/>
         </see>
       </if>
@@ -259,7 +259,7 @@
     </rule>
     <rule>
       <if>
-        <see shape="UNTITLED Hand">
+        <see shape="HEALTHY HAND">
           <direction dcol="-1"/>
         </see>
       </if>
@@ -271,7 +271,7 @@
     </rule>
     <rule>
       <if>
-        <see shape="UNTITLED Hand">
+        <see shape="HEALTHY HAND">
           <direction drow="1"/>
         </see>
       </if>
@@ -283,7 +283,7 @@
     </rule>
     <rule>
       <if>
-        <see shape="UNTITLED Hand">
+        <see shape="HEALTHY HAND">
           <direction drow="-1"/>
         </see>
       </if>

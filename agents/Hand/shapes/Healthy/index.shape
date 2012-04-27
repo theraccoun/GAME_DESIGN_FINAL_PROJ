@@ -1,4 +1,4 @@
 <?xml version="1.0"?>
-<shape-manager name="UNTITLED" relative-texture-path="Fabric">
+<shape-manager name="HEALTHY" relative-texture-path="Fabric">
   <tile texture="red-rug.png"/>
 </shape-manager>

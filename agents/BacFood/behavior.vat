@@ -78,6 +78,7 @@
     <rule>
       <if>
         <percent-chance expression="40"/>
+        <current-world world="play"/>
       </if>
       <then>
         <erase>
@@ -86,7 +87,31 @@
       </then>
     </rule>
     <rule>
-      <if/>
+      <if>
+        <current-world world="play"/>
+      </if>
+      <then>
+        <set attribute="IS_BEING_EATEN" value="0"/>
+        <change shape="BACFOOD Bacfood">
+          <direction/>
+        </change>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <percent-chance expression="10"/>
+        <current-world world="epidemic"/>
+      </if>
+      <then>
+        <erase>
+          <direction/>
+        </erase>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <current-world world="epidemic"/>
+      </if>
       <then>
         <set attribute="IS_BEING_EATEN" value="0"/>
         <change shape="BACFOOD Bacfood">

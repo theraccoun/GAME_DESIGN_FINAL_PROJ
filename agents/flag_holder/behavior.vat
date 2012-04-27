@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<behavior comments="I am user controlled">
+  <method disclosed="true">
+    <while-running/>
+    <rule>
+      <if>
+        <test expression1="@Epidemic" operator="&lt;" expression2="23"/>
+        <current-world world="epidemic"/>
+        <see shape="NEAR_EPIDEMIC Flag_Holder">
+          <direction/>
+        </see>
+      </if>
+      <then>
+        <change shape="FLAG_HOLDER Flag_Holder">
+          <direction/>
+        </change>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <test expression1="@Epidemic" operator="&gt;=" expression2="23"/>
+        <test expression1="@Epidemic" operator="&lt;" expression2="35"/>
+        <current-world world="epidemic"/>
+      </if>
+      <then>
+        <change shape="NEAR_EPIDEMIC Flag_Holder">
+          <direction/>
+        </change>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <test expression1="@Epidemic" operator="&gt;=" expression2="35"/>
+        <current-world world="epidemic"/>
+      </if>
+      <then>
+        <stop-simulation/>
+        <show-message disclosed="true" text="You Started an Epidemic.  You win (and the human race loses)!" subtext=""/>
+        <finish-animations/>
+        <reload-world/>
+      </then>
+    </rule>
+  </method>
+</behavior>

@@ -6,7 +6,7 @@
     <specular red="1.5" green="1.5" blue="1.5"/>
   </light-source>
   <background-color red="0.0" green="0.0" blue="0.0"/>
-  <camera eye-x="9.380000054836273" eye-y="7.92000013589859" eye-z="12.900000125169754" center-x="9.380000054836273" center-y="7.92000013589859" center-z="0.0" up-x="0.0" up-y="1.0" up-z="0.0" fovy="60.0" aspect="3.6233766233766236" near="0.005" far="2000.0" azimuth="0.0" zenith="0.0"/>
+  <camera eye-x="9.380000054836273" eye-y="7.92000013589859" eye-z="12.900000125169754" center-x="9.380000054836273" center-y="7.92000013589859" center-z="0.0" up-x="0.0" up-y="1.0" up-z="0.0" fovy="60.0" aspect="3.185022026431718" near="0.005" far="2000.0" azimuth="0.0" zenith="0.0"/>
   <agent-matrix name="AGENT-MATRIX11508" rows="16" columns="16" layers="1" texture="l1_Commands.jpg" is-grid-visible="false">
     <tut_next_agent row="14" col="12" shape-name="TUT_NEXT" x-turn="0.5" y-turn="0.5"/>
     <background-color red="0.0" green="0.5" blue="1.0"/>

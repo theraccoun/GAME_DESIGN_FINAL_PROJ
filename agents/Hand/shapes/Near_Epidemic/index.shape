@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<shape-manager name="NEAR_EPIDEMIC" relative-texture-path="Tiling">
+  <tile texture="Disco Tile magenta.png"/>
+</shape-manager>

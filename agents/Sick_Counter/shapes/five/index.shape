@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<shape-manager name="FIVE" relative-texture-path="Numbers">
+  <tile texture="5.png"/>
+</shape-manager>

@@ -5,8 +5,13 @@
     <rule>
       <if>
         <current-world negated="true" world="play"/>
+        <test expression1="@World_Epidemic" operator="!=" expression2="1"/>
       </if>
-      <then/>
+      <then>
+        <message selector="Check_Current_World">
+          <direction/>
+        </message>
+      </then>
     </rule>
     <rule>
       <if>
@@ -20,57 +25,56 @@
       </then>
     </rule>
     <rule>
+      <if/>
+      <then>
+        <set attribute="B" value="0.25*(B[left] + B[right] + B[down] + B[up])"/>
+        <set attribute="D" value="0.25*(D[left] + D[right] + D[down] + D[up])"/>
+      </then>
+    </rule>
+  </method>
+  <method disclosed="true">
+    <on selector="Check_Current_World"/>
+    <rule>
       <if>
-        <test expression1="@Epidemic" operator="&gt;=" expression2="80"/>
         <current-world world="epidemic"/>
       </if>
       <then>
-        <stop-simulation/>
-        <show-message disclosed="true" text="Be careful, an epidemic might break out soon!" subtext=""/>
-        <run-simulation/>
+        <set attribute="@WORLD_EPIDEMIC" value="1"/>
       </then>
     </rule>
+  </method>
+  <method disclosed="true">
+    <on selector="Show_Sickness"/>
     <rule>
-      <if>
-        <test expression1="@Epidemic" operator="&gt;=" expression2="120"/>
-        <current-world world="epidemic"/>
-      </if>
+      <if/>
       <then>
-        <stop-simulation/>
-        <show-message disclosed="true" text="You Started an Epidemic.  NOooooooooooooooooooooooooooooo" subtext=""/>
-        <finish-animations/>
-        <reload-world/>
-        <run-simulation/>
-      </then>
-    </rule>
-    <rule>
-      <if>
-        <key label="S"/>
-        <percent-chance expression="10"/>
-      </if>
-      <then>
-        <new shape="UNTITLED Soap">
+        <change shape="SICK Hand">
           <direction/>
-        </new>
+        </change>
       </then>
     </rule>
+  </method>
+  <method disclosed="true">
+    <on selector="Show_Healthy"/>
+    <rule>
+      <if/>
+      <then>
+        <change shape="HEALTHY HAND">
+          <direction/>
+        </change>
+      </then>
+    </rule>
+  </method>
+  <method disclosed="true">
+    <on selector="Rand_Food"/>
     <rule>
       <if>
-        <key label="F"/>
-        <percent-chance expression="0.1"/>
+        <percent-chance expression="0.4"/>
       </if>
       <then>
         <new shape="BACFOOD Bacfood">
           <direction/>
         </new>
-      </then>
-    </rule>
-    <rule>
-      <if>
-        <key label="M"/>
-        <percent-chance expression="0.3"/>
-      </if>
-      <then>
         <new shape="BACTERIA Bacteria">
           <direction/>
         </new>
@@ -78,23 +82,25 @@
     </rule>
     <rule>
       <if>
-        <key label="N"/>
+        <percent-chance expression="0.1"/>
       </if>
       <then>
-        <broadcast class-name="Bacteria" selector="Die"/>
+        <new shape="SUPER_MUTANT Bacteria">
+          <direction/>
+        </new>
       </then>
     </rule>
+  </method>
+  <method disclosed="true">
+    <on selector="New_Soap"/>
     <rule>
       <if>
-        <key label="C"/>
+        <percent-chance expression="10"/>
       </if>
-      <then/>
-    </rule>
-    <rule>
-      <if/>
       <then>
-        <set attribute="B" value="0.25*(B[left] + B[right] + B[down] + B[up])"/>
-        <set attribute="D" value="0.25*(D[left] + D[right] + D[down] + D[up])"/>
+        <new shape="UNTITLED Soap">
+          <direction/>
+        </new>
       </then>
     </rule>
   </method>

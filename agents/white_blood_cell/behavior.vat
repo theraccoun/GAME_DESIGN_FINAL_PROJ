@@ -5,8 +5,13 @@
     <rule>
       <if>
         <current-world negated="true" world="play"/>
+        <test expression1="@World_Epidemic" operator="!=" expression2="1"/>
       </if>
-      <then/>
+      <then>
+        <message selector="Check_Current_World">
+          <direction/>
+        </message>
+      </then>
     </rule>
     <rule>
       <if>
@@ -162,7 +167,7 @@
         <test expression1="b[up]" operator="&gt;=" expression2="b[up]"/>
         <test expression1="b[up]" operator="&gt;=" expression2="b[down]"/>
         <test expression1="Is_Eating" operator="!=" expression2="1"/>
-        <see shape="UNTITLED Hand">
+        <see shape="HEALTHY HAND">
           <direction drow="1"/>
         </see>
       </if>
@@ -179,7 +184,7 @@
         <test expression1="b[left]" operator="&gt;=" expression2="b[up]"/>
         <test expression1="b[left]" operator="&gt;=" expression2="b[down]"/>
         <test expression1="Is_Eating" operator="!=" expression2="1"/>
-        <see shape="UNTITLED Hand">
+        <see shape="HEALTHY HAND">
           <direction dcol="-1"/>
         </see>
       </if>
@@ -195,7 +200,7 @@
         <test expression1="b[right]" operator="&gt;=" expression2="b[up]"/>
         <test expression1="b[right]" operator="&gt;=" expression2="b[down]"/>
         <test expression1="Is_Eating" operator="!=" expression2="1"/>
-        <see shape="UNTITLED Hand">
+        <see shape="HEALTHY HAND">
           <direction dcol="1"/>
         </see>
       </if>
@@ -211,7 +216,7 @@
         <test expression1="b[down]" operator="&gt;=" expression2="b[up]"/>
         <test expression1="b[down]" operator="&gt;=" expression2="b[left]"/>
         <test expression1="Is_Eating" operator="!=" expression2="1"/>
-        <see shape="UNTITLED Hand">
+        <see shape="HEALTHY HAND">
           <direction drow="-1"/>
         </see>
       </if>
@@ -219,6 +224,17 @@
         <move>
           <direction drow="-1"/>
         </move>
+      </then>
+    </rule>
+  </method>
+  <method disclosed="true">
+    <on selector="Check_Current_World"/>
+    <rule>
+      <if>
+        <current-world world="epidemic"/>
+      </if>
+      <then>
+        <set attribute="@WORLD_EPIDEMIC" value="1"/>
       </then>
     </rule>
   </method>

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<behavior comments="I am user controlled">
+  <method disclosed="true">
+    <while-running/>
+    <rule>
+      <if>
+        <key label="R"/>
+      </if>
+      <then>
+        <broadcast class-name="Bacteria" selector="Die"/>
+        <broadcast class-name="Bacfood" selector="Die"/>
+        <broadcast class-name="White_Blood_Cell" selector="Die"/>
+        <broadcast class-name="Hand" selector="Show_Healthy"/>
+        <set attribute="@SICK" value="0"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <key label="P"/>
+      </if>
+      <then>
+        <broadcast class-name="Hand" selector="Rand_Food"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <key label="S"/>
+      </if>
+      <then>
+        <broadcast class-name="Hand" selector="New_Soap"/>
+      </then>
+    </rule>
+  </method>
+</behavior>
