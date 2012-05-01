@@ -1,10 +1,12 @@
 <?xml version="1.0"?>
 <behavior comments="I am user controlled">
   <method disclosed="true">
-    <while-running/>
+    <before-running/>
     <rule>
       <if/>
-      <then/>
+      <then>
+        <set attribute="@FUN" value="100"/>
+      </then>
     </rule>
   </method>
 </behavior>

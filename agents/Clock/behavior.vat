@@ -5,8 +5,13 @@
     <rule>
       <if>
         <current-world negated="true" world="play"/>
+        <test expression1="@World_Epidemic" operator="!=" expression2="1"/>
       </if>
-      <then/>
+      <then>
+        <message selector="Check_Current_World">
+          <direction/>
+        </message>
+      </then>
     </rule>
     <rule>
       <if>
@@ -66,6 +71,17 @@
         <message selector="Reset_Clock">
           <direction dcol="-1"/>
         </message>
+      </then>
+    </rule>
+  </method>
+  <method disclosed="true">
+    <on selector="Check_Current_World"/>
+    <rule>
+      <if>
+        <current-world world="epidemic"/>
+      </if>
+      <then>
+        <set attribute="@WORLD_EPIDEMIC" value="1"/>
       </then>
     </rule>
   </method>

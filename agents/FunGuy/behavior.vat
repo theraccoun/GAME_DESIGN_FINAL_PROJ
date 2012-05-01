@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<behavior comments="I am user controlled">
+  <method disclosed="true">
+    <while-running/>
+    <rule>
+      <if>
+        <see shape="SUPER_FUN Funguy">
+          <direction/>
+        </see>
+        <test expression1="@Fun" operator="&lt;=" expression2="70"/>
+      </if>
+      <then>
+        <change shape="SEMIFUN Funguy">
+          <direction/>
+        </change>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see shape="SEMIFUN Funguy">
+          <direction/>
+        </see>
+        <test expression1="@Fun" operator="&gt;" expression2="70"/>
+      </if>
+      <then>
+        <change shape="SUPER_FUN Funguy">
+          <direction/>
+        </change>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see shape="SEMIFUN Funguy">
+          <direction/>
+        </see>
+        <test expression1="@Fun" operator="&lt;" expression2="30"/>
+      </if>
+      <then>
+        <change shape="FUNGUY Funguy">
+          <direction/>
+        </change>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see shape="FUNGUY Funguy">
+          <direction/>
+        </see>
+        <test expression1="@Fun" operator="&gt;=" expression2="30"/>
+      </if>
+      <then>
+        <change shape="SEMIFUN Funguy">
+          <direction/>
+        </change>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see shape="FUNGUY Funguy">
+          <direction/>
+        </see>
+        <once-every seconds="2"/>
+      </if>
+      <then>
+        <message selector="Move_Random">
+          <direction/>
+        </message>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see shape="SEMIFUN Funguy">
+          <direction/>
+        </see>
+        <once-every seconds="1"/>
+      </if>
+      <then>
+        <message selector="Move_Random">
+          <direction/>
+        </message>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see shape="SUPER_FUN Funguy">
+          <direction/>
+        </see>
+        <once-every seconds="0.3"/>
+      </if>
+      <then>
+        <message selector="Move_Random">
+          <direction/>
+        </message>
+      </then>
+    </rule>
+  </method>
+  <method disclosed="true">
+    <on selector="Move_Random"/>
+    <rule>
+      <if>
+        <see shape="FUNMETER Funscore">
+          <direction dcol="1"/>
+        </see>
+        <percent-chance expression="25"/>
+      </if>
+      <then>
+        <move>
+          <direction dcol="1"/>
+        </move>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see shape="FUNMETER Funscore">
+          <direction dcol="-1"/>
+        </see>
+        <percent-chance expression="25"/>
+      </if>
+      <then>
+        <move>
+          <direction dcol="-1"/>
+        </move>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see shape="FUNMETER Funscore">
+          <direction drow="1"/>
+        </see>
+        <percent-chance expression="25"/>
+      </if>
+      <then>
+        <move>
+          <direction drow="1"/>
+        </move>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see shape="FUNMETER Funscore">
+          <direction drow="-1"/>
+        </see>
+        <percent-chance expression="25"/>
+      </if>
+      <then>
+        <move>
+          <direction drow="-1"/>
+        </move>
+      </then>
+    </rule>
+  </method>
+</behavior>

@@ -35,7 +35,7 @@
       </if>
       <then>
         <stop-simulation/>
-        <show-message disclosed="true" text="You Started an Epidemic.  You win (and the human race loses)!" subtext=""/>
+        <show-message disclosed="true" text="Oh no! You created an epidemic! All of humanity is doomed!!!!" subtext=""/>
         <finish-animations/>
         <reload-world/>
       </then>

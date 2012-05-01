@@ -224,7 +224,7 @@
     <rule>
       <if/>
       <then>
-        <set attribute="HUNGER" value="10"/>
+        <set attribute="HUNGER" value="17"/>
         <set attribute="@SICK" value="@Sick + 1"/>
       </then>
     </rule>
@@ -299,10 +299,17 @@
     <rule>
       <if/>
       <then>
-        <stop-simulation/>
-        <play-sound ref="Explode.mp3"/>
         <show-message text="Oh no, you died! Hit &#39;r&#39; to reset and try again" subtext="The spaceship is ready to go"/>
         <reload-world/>
+      </then>
+    </rule>
+  </method>
+  <method disclosed="true">
+    <before-running/>
+    <rule>
+      <if/>
+      <then>
+        <set attribute="HUNGER" value="17"/>
       </then>
     </rule>
   </method>

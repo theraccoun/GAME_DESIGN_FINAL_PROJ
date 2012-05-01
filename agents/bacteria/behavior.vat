@@ -469,6 +469,9 @@
         <new shape="SUPER_MUTANT Bacteria">
           <direction dcol="1"/>
         </new>
+        <new shape="SUPER_MUTANT Bacteria">
+          <direction dcol="-1"/>
+        </new>
       </then>
     </rule>
     <rule>
@@ -481,6 +484,9 @@
       <then>
         <new shape="SUPER_MUTANT Bacteria">
           <direction dcol="1"/>
+        </new>
+        <new shape="SUPER_MUTANT Bacteria">
+          <direction dcol="-1"/>
         </new>
       </then>
     </rule>

@@ -16,12 +16,11 @@
     <rule>
       <if>
         <once-every seconds="6"/>
-        <percent-chance expression="0.4"/>
       </if>
       <then>
-        <new shape="BACFOOD Bacfood">
+        <message selector="Rand_Food">
           <direction/>
-        </new>
+        </message>
       </then>
     </rule>
     <rule>
@@ -76,16 +75,6 @@
           <direction/>
         </new>
         <new shape="BACTERIA Bacteria">
-          <direction/>
-        </new>
-      </then>
-    </rule>
-    <rule>
-      <if>
-        <percent-chance expression="0.1"/>
-      </if>
-      <then>
-        <new shape="SUPER_MUTANT Bacteria">
           <direction/>
         </new>
       </then>

@@ -103,6 +103,18 @@
         <see shape="MINUTE_1 Minute_1">
           <direction/>
         </see>
+      </if>
+      <then>
+        <change shape="ZERO Minute_1">
+          <direction/>
+        </change>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see shape="ZERO Minute_1">
+          <direction/>
+        </see>
         <see-a class-name="Minute_1">
           <direction dcol="-1"/>
         </see-a>
@@ -114,20 +126,55 @@
         <change shape="MINUTE_9 Minute_1">
           <direction/>
         </change>
+        <set attribute="@FUN" value="@Fun - 10"/>
       </then>
     </rule>
     <rule>
       <if>
-        <see shape="MINUTE_1 Minute_1">
+        <see shape="ZERO Minute_1">
           <direction/>
         </see>
         <see-a negated="true" class-name="Minute_1">
           <direction dcol="-1"/>
         </see-a>
+        <current-world world="play"/>
       </if>
       <then>
         <stop-simulation/>
         <show-message disclosed="true" text="Congratulations, your bacteria survived!" subtext=""/>
+        <switch-to-world world="level2_slide"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see shape="ZERO Minute_1">
+          <direction/>
+        </see>
+        <see-a negated="true" class-name="Minute_1">
+          <direction dcol="-1"/>
+        </see-a>
+        <current-world world="epidemic"/>
+        <test expression1="@Fun" operator="&gt;" expression2="21"/>
+      </if>
+      <then>
+        <stop-simulation/>
+        <show-message disclosed="true" text="Congratulations, you kept from getting sick and from causing an epidemic!" subtext="And, you had fun while doing it"/>
+        <switch-to-world world="level2_slide"/>
+      </then>
+    </rule>
+    <rule>
+      <if>
+        <see shape="ZERO Minute_1">
+          <direction/>
+        </see>
+        <see-a negated="true" class-name="Minute_1">
+          <direction dcol="-1"/>
+        </see-a>
+        <current-world world="epidemic"/>
+      </if>
+      <then>
+        <stop-simulation/>
+        <show-message disclosed="true" text="Congratulations, you kept from getting sick and from causing an epidemic!" subtext="But you didn&#39;t have any fun. Try again this time, and be more adventorous!"/>
         <switch-to-world world="level2_slide"/>
       </then>
     </rule>

@@ -20,6 +20,7 @@
       </if>
       <then>
         <broadcast class-name="Hand" selector="Rand_Food"/>
+        <set attribute="@FUN" value="@Fun+10"/>
       </then>
     </rule>
     <rule>
@@ -28,6 +29,7 @@
       </if>
       <then>
         <broadcast class-name="Hand" selector="New_Soap"/>
+        <set attribute="@FUN" value="@Fun-30"/>
       </then>
     </rule>
   </method>
